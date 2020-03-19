@@ -1630,7 +1630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 251115508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0, z: 0}
+  m_LocalPosition: {x: -20.59, y: 1.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1766,7 +1766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -20.81, y: 1.17, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1809,7 +1809,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127943746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -20.81, y: 1.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 203239602}
@@ -1830,6 +1830,8 @@ GameObject:
   - component: {fileID: 1381695033}
   - component: {fileID: 1381695032}
   - component: {fileID: 1381695035}
+  - component: {fileID: 1381695037}
+  - component: {fileID: 1381695036}
   m_Layer: 0
   m_Name: Chat
   m_TagString: Untagged
@@ -1928,7 +1930,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.27872634, y: 0.0053600073}
@@ -1944,6 +1946,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.0566196, y: 4.496148}
   m_EdgeRadius: 0
+--- !u!114 &1381695036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381695031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c636d041469ed824f9a1c8e6f83942fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Sentences:
+    m_Sentence: A
+    m_Choices:
+    - 1
+    - 2
+    - 3
+    m_NextSentences:
+    - m_Sentence: 1
+      m_Choices: []
+      m_NextSentences: []
+    - m_Sentence: 2
+      m_Choices: []
+      m_NextSentences: []
+    - m_Sentence: 3
+      m_Choices: []
+      m_NextSentences: []
+--- !u!114 &1381695037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381695031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bf01cd31e2c1c342863eaefb006a270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DialogBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
+    type: 3}
+  m_ChoiceButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
+    type: 3}
+  m_Decal1: {x: -55, y: 0, z: 0}
+  m_Decal2: {x: 0, y: 0, z: 0}
+  m_Decal3: {x: 55, y: 0, z: 0}
+  m_DecalF: {x: 0, y: 0, z: 0}
 --- !u!1 &1387158998
 GameObject:
   m_ObjectHideFlags: 0
