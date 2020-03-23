@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Dialog;
+using System.IO;
 
 public class NPC : MonoBehaviour
 {
-    public Dialog m_Sentences;
+    public Object m_JsonFile;
+    private Dialog m_Dialog;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        string jsonString = File.ReadAllText(Application.streamingAssetsPath + "/" + m_JsonFile.name);
+        m_Dialog = CreateFromJSON(jsonString);
+        // Debug.Log(m_Dialog.m_NextSentences[0].m_Sentence);
     }
 
     // Update is called once per frame
@@ -20,7 +25,7 @@ public class NPC : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GetComponent<DialogManager>().StartDialog(m_Sentences);
+        GetComponent<DialogManager>().StartDialog(m_Dialog);
     }
 
     private void OnTriggerExit2D(Collider2D collision)

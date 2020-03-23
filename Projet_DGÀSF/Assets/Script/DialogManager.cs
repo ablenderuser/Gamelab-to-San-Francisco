@@ -1,16 +1,21 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
     public GameObject m_DialogBoxPrefab;
+
     private GameObject m_DialogBox;
     private GameObject m_DialogTextUI;
     private Text m_DialogText;
 
 
     public GameObject m_ChoiceButtonPrefab;
+
+    private GameObject m_CanvasFirstChoiceButton;
+    private GameObject m_CanvasSecondChoiceButton;
+    private GameObject m_CanvasThirdChoiceButton;
+    private GameObject m_CanvasFinishDialogButton;
 
     private GameObject m_FirstChoiceButtonUI;
     private GameObject m_SecondChoiceButtonUI;
@@ -45,8 +50,7 @@ public class DialogManager : MonoBehaviour
     {
         m_Dialog = dialog;
 
-        Instantiate(m_DialogBoxPrefab, transform.position, transform.rotation);
-        m_DialogBox = GameObject.FindWithTag("DialogBox");
+        m_DialogBox = Instantiate(m_DialogBoxPrefab, transform.position, transform.rotation);
 
         m_DialogTextUI = GameObject.Find("DialogText");
         m_DialogText = m_DialogTextUI.GetComponent<Text>();
@@ -54,7 +58,7 @@ public class DialogManager : MonoBehaviour
 
         if (m_Dialog.m_Choices[0] != "")
         {
-            Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+            m_CanvasFirstChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
             m_FirstChoiceButtonUI = GameObject.Find("ChoiceButton");
             m_FirstChoiceButtonUI.name = "FirstChoiceButton";
             m_FirstChoiceButtonUI.transform.Translate(m_Decal1);
@@ -69,7 +73,7 @@ public class DialogManager : MonoBehaviour
 
         if (m_Dialog.m_Choices[1] != "")
         {
-            Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+            m_CanvasSecondChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
             m_SecondChoiceButtonUI = GameObject.Find("ChoiceButton");
             m_SecondChoiceButtonUI.name = "SecondChoiceButton";
             m_SecondChoiceButtonUI.transform.Translate(m_Decal2);
@@ -84,7 +88,7 @@ public class DialogManager : MonoBehaviour
 
         if (m_Dialog.m_Choices[2] != "")
         {
-            Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+            m_CanvasThirdChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
             m_ThirdChoiceButtonUI = GameObject.Find("ChoiceButton");
             m_ThirdChoiceButtonUI.name = "ThirdChoiceButton";
             m_ThirdChoiceButtonUI.transform.Translate(m_Decal3);
@@ -96,6 +100,11 @@ public class DialogManager : MonoBehaviour
             m_ThirdChoiceText = m_ThirdChoiceTextUI.GetComponent<Text>();
             m_ThirdChoiceText.text = m_Dialog.m_Choices[2];
         }
+    }
+
+    public void Bonjour()
+    {
+        Debug.Log("Bonjour");
     }
 
     public void FirstChoiceDialog()
@@ -144,11 +153,11 @@ public class DialogManager : MonoBehaviour
         Destroy(m_ThirdChoiceButtonUI);
 
         m_DialogText.text = m_Dialog.m_Sentence;
-        if(m_Dialog.m_Choices.Length > 0)
+        if (m_Dialog.m_Choices.Length > 0)
         {
             if (m_Dialog.m_Choices[0] != "")
             {
-                Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+                m_CanvasFirstChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
                 m_FirstChoiceButtonUI = GameObject.Find("ChoiceButton");
                 m_FirstChoiceButtonUI.name = "FirstChoiceButton";
                 m_FirstChoiceButtonUI.transform.Translate(m_Decal1);
@@ -163,7 +172,7 @@ public class DialogManager : MonoBehaviour
 
             if (m_Dialog.m_Choices[1] != "")
             {
-                Instantiate(m_ChoiceButtonPrefab, transform.position + m_Decal2, transform.rotation);
+                m_CanvasSecondChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position + m_Decal2, transform.rotation);
                 m_SecondChoiceButtonUI = GameObject.Find("ChoiceButton");
                 m_SecondChoiceButtonUI.name = "SecondChoiceButton";
                 m_SecondChoiceButtonUI.transform.Translate(m_Decal2);
@@ -178,7 +187,7 @@ public class DialogManager : MonoBehaviour
 
             if (m_Dialog.m_Choices[2] != "")
             {
-                Instantiate(m_ChoiceButtonPrefab, transform.position + m_Decal3, transform.rotation);
+                m_CanvasThirdChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position + m_Decal3, transform.rotation);
                 m_ThirdChoiceButtonUI = GameObject.Find("ChoiceButton");
                 m_ThirdChoiceButtonUI.name = "ThirdChoiceButton";
                 m_ThirdChoiceButtonUI.transform.Translate(m_Decal3);
@@ -193,7 +202,7 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
-            Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+            m_CanvasFinishDialogButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
             m_FinishDialogButtonUI = GameObject.Find("ChoiceButton");
             m_FinishDialogButtonUI.name = "FinishDialogButton";
             m_FinishDialogButtonUI.transform.Translate(m_DecalF);
@@ -209,10 +218,10 @@ public class DialogManager : MonoBehaviour
 
     public void EndDialog()
     {
-        Destroy(m_FirstChoiceButtonUI);
-        Destroy(m_SecondChoiceButtonUI);
-        Destroy(m_ThirdChoiceButtonUI);
-        Destroy(m_FinishDialogButtonUI);
+        Destroy(m_CanvasFirstChoiceButton);
+        Destroy(m_CanvasSecondChoiceButton);
+        Destroy(m_CanvasThirdChoiceButton);
+        Destroy(m_CanvasFinishDialogButton);
         Destroy(m_DialogBox);
     }
 }

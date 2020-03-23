@@ -11,4 +11,9 @@ public class Dialog
     public string m_Sentence;
     public string[] m_Choices;
     public Dialog[] m_NextSentences;
+
+    public static Dialog CreateFromJSON(string jsonString)
+    {
+        return JsonUtility.FromJson<Dialog>(jsonString);
+    }
 }

@@ -1958,22 +1958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c636d041469ed824f9a1c8e6f83942fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Sentences:
-    m_Sentence: A
-    m_Choices:
-    - 1
-    - 2
-    - 3
-    m_NextSentences:
-    - m_Sentence: 1
-      m_Choices: []
-      m_NextSentences: []
-    - m_Sentence: 2
-      m_Choices: []
-      m_NextSentences: []
-    - m_Sentence: 3
-      m_Choices: []
-      m_NextSentences: []
+  m_JsonFile: {fileID: 102900000, guid: 592f1445ec6094545b87168e409fe09d, type: 3}
 --- !u!114 &1381695037
 MonoBehaviour:
   m_ObjectHideFlags: 0
