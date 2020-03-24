@@ -113,9 +113,11 @@ public class DialogManager : MonoBehaviour
         {
             m_Dialog = m_Dialog.m_NextSentences[0];
             ContinueDialog();
+            HeartHealthVisual.heartHealthSystemStatic.Damage(4);
         }
         else
         {
+            
             EndDialog();
         }
     }
@@ -138,6 +140,7 @@ public class DialogManager : MonoBehaviour
         if (m_Dialog.m_NextSentences.Length > 0)
         {
             m_Dialog = m_Dialog.m_NextSentences[2];
+            HeartHealthVisual.heartHealthSystemStatic.Heal(4);
             ContinueDialog();
         }
         else
@@ -223,5 +226,6 @@ public class DialogManager : MonoBehaviour
         Destroy(m_CanvasThirdChoiceButton);
         Destroy(m_CanvasFinishDialogButton);
         Destroy(m_DialogBox);
+        
     }
 }
