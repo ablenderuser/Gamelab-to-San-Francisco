@@ -39,11 +39,14 @@ public class PlayerController : MonoBehaviour
 		}
 		else
 		{
-			if (facingRight == true)
+			if ( movement.x < 0 )
 			{
-				Flip();
+				if (facingRight == true)
+				{
+					Flip();
+				}
+				animator.SetBool("Droite", false);
 			}
-			animator.SetBool("Droite", false);
 		}
 		
 		if ( movement.y > 0 )
