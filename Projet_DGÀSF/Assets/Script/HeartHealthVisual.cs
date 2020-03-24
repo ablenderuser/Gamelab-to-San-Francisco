@@ -35,17 +35,17 @@ public class HeartHealthVisual : MonoBehaviour
         heartHealthSystemStatic = heartHealthSystem;
 
         List<HeartHealthSystem.Heart> heartList = heartHealthSystem.GetHeartList();
-        Vector2 heartAnchoredPosition = new Vector2(-550, 200);
+        Vector2 heartAnchoredPosition = new Vector2(-350, 100);
 
         for (int i = 0; i < heartList.Count; i++)
         {
             HeartHealthSystem.Heart heart = heartList[i];
             CreateHeartImage(heartAnchoredPosition).SetHeartFragments(heart.GetFragmentAmount());
-            heartAnchoredPosition += new Vector2(30, 0);
+            heartAnchoredPosition += new Vector2(20, 0);
             if (i == 9 || i == 19 || i == 29)
             {
                 
-                heartAnchoredPosition += new Vector2(-300, -70*( (i/10)+1   ));
+                heartAnchoredPosition += new Vector2(-200, -40*( (i/10)+1   ));
                 Debug.Log("i = " + i + " ; (i/10)+1 =  "+ ((i / 10) + 1));
             }
         }
@@ -108,7 +108,7 @@ public class HeartHealthVisual : MonoBehaviour
         heartGameObject.transform.localPosition = Vector3.zero;
 
         heartGameObject.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
-        heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(60, 60);
+        heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(45, 45);
 
         Image heartImageUI = heartGameObject.GetComponent<Image>();
         heartImageUI.sprite = heart1Sprite;
