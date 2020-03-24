@@ -14,7 +14,6 @@ public class NPC : MonoBehaviour
     {
         string jsonString = File.ReadAllText(Application.streamingAssetsPath + "/" + m_JsonFile.name);
         m_Dialog = CreateFromJSON(jsonString);
-        // Debug.Log(m_Dialog.m_NextSentences[0].m_Sentence);
     }
 
     // Update is called once per frame
