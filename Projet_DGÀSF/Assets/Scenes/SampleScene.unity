@@ -2193,9 +2193,9 @@ MonoBehaviour:
     type: 3}
   m_ChoiceButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
     type: 3}
-  m_Decal1: {x: -55, y: 0, z: 0}
+  m_Decal1: {x: -70, y: 0, z: 0}
   m_Decal2: {x: 0, y: 0, z: 0}
-  m_Decal3: {x: 55, y: 0, z: 0}
+  m_Decal3: {x: 70, y: 0, z: 0}
   m_DecalF: {x: 0, y: 0, z: 0}
 --- !u!1 &1387158998
 GameObject:
