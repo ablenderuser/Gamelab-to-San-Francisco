@@ -66,6 +66,7 @@
     <Compile Include="Assets\Script\HeartHealthVisual.cs" />
     <Compile Include="Assets\Script\NPC.cs" />
     <Compile Include="Assets\Script\PlayerController.cs" />
+    <Compile Include="Assets\Script\SceneLauncher.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/sylva/Desktop/Mines de Nancy/Game lab/Gamelab-to-San-Francisco/Projet_DGÀSF/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
