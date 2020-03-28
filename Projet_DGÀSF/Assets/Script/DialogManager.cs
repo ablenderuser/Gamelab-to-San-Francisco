@@ -9,7 +9,6 @@ public class DialogManager : MonoBehaviour
     private GameObject m_DialogTextUI;
     private Text m_DialogText;
 
-
     public GameObject m_ChoiceButtonPrefab;
 
     private GameObject m_CanvasFirstChoiceButton;
@@ -31,7 +30,6 @@ public class DialogManager : MonoBehaviour
     private Text m_SecondChoiceText;
     private Text m_ThirdChoiceText;
     private Text m_FinishDialogText;
-
 
     private Dialog m_Dialog;
 
@@ -100,11 +98,6 @@ public class DialogManager : MonoBehaviour
             m_ThirdChoiceText = m_ThirdChoiceTextUI.GetComponent<Text>();
             m_ThirdChoiceText.text = m_Dialog.m_Choices[2];
         }
-    }
-
-    public void Bonjour()
-    {
-        Debug.Log("Bonjour");
     }
 
     public void FirstChoiceDialog()
@@ -226,6 +219,6 @@ public class DialogManager : MonoBehaviour
         Destroy(m_CanvasThirdChoiceButton);
         Destroy(m_CanvasFinishDialogButton);
         Destroy(m_DialogBox);
-        GetComponent<NPC>().SetEndDialog();
+        GetComponent<NonPlayerController>().SetEndDialog();
     }
 }
