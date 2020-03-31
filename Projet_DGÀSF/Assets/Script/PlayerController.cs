@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         //Use the two stored floats to create a new Vector2 variable movement. 
         Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
         
-        animator.SetFloat("Vitesse", movement.magnitude * Time.fixedDeltaTime);
+        animator.SetFloat("Vitesse", 60*movement.magnitude * Time.fixedDeltaTime);
         
         if ( movement.x > 0 )
         {
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
 		}
         
         //Call the translate function to move 
-        rb2d.MovePosition(rb2d.position + movement * Time.fixedDeltaTime );
+        rb2d.MovePosition(rb2d.position + 60*movement * Time.fixedDeltaTime );
         
 	}
 
