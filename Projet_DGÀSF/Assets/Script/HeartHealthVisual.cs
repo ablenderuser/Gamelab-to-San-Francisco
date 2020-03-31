@@ -23,7 +23,7 @@ public class HeartHealthVisual : MonoBehaviour
 
     private void Start()
     {
-        HeartHealthSystem heartHealthSystem = new HeartHealthSystem(20);
+        HeartHealthSystem heartHealthSystem = new HeartHealthSystem(40);
         SetHeartHealthSystem(heartHealthSystem);
 
         
@@ -54,6 +54,7 @@ public class HeartHealthVisual : MonoBehaviour
         heartHealthSystem.OnDead += heartHealthSystem_OnDead;
         //heartHealthSystem.Damage(2);
         //heartHealthSystem.Heal(1);
+        heartHealthSystemStatic.Damage(4*35);
         
 
     }

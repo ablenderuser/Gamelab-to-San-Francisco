@@ -219,6 +219,6 @@ public class DialogManager : MonoBehaviour
         Destroy(m_CanvasThirdChoiceButton);
         Destroy(m_CanvasFinishDialogButton);
         Destroy(m_DialogBox);
-        GetComponent<NonPlayerController>().SetEndDialog();
+        GetComponent<NPC>().SetEndDialog();
     }
 }
