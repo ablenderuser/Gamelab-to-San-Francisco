@@ -7,6 +7,7 @@ public class CollisionHandling : MonoBehaviour
 
     private bool INzone = false;
     private SpriteRenderer sprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,18 +17,19 @@ public class CollisionHandling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(INzone);
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {	
-    	if(INzone==false){
-    		sprite.sortingOrder = 2;
-	        INzone =true;
-	        Vector3 newPosition = transform.position;
-	        newPosition.z = transform.position.z+0.5f;
-	        transform.position = newPosition;
-    	}
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (!INzone)
+        {
+            INzone = true;
+            sprite.sortingOrder = 2;
+            Vector3 newPosition = transform.position;
+            newPosition.z = transform.position.z + 0.5f;
+            transform.position = newPosition;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
