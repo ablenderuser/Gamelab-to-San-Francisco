@@ -1,0 +1,26 @@
+{
+"m_Sentence":"Salut, t'as bien dormi ?",
+"m_Choices":["Non"],
+"m_NextSentences":[{
+
+"m_Sentence":"Ah ben dis donc, t'est enjoué pour parler à ta sœur le matin !",
+"m_Choices":["Non, j'ai fait un cauchemar"],
+"m_NextSentences":[{
+
+"m_Sentence":"Ah oui, lequel ?"
+"m_Choices":["J'ai rêvé que je pouvais pas sortir de la maison"]
+"m_NextSentences":[{
+
+"m_Sentence":"Ah oui, justement…"
+"m_Choices":["Quoi ?"]
+"m_NextSentences":[{
+
+"m_Sentence":"En parlant de sortir, j'ai perdu la clef"
+"m_Choices":[]
+"m_NextSentences":[]
+
+}]
+}]
+}]
+}]
+}
