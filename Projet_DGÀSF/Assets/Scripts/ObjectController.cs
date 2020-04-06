@@ -8,11 +8,13 @@ public class ObjectController : MonoBehaviour
 {
     public string m_Description;
     public string m_Action;
+    public bool m_OneShot;
     public GameObject m_CoAnimatedObject;
 
     private Animator m_Animator;
     private Animator m_CoAnimator;
 
+    private bool m_Possible = true;
     private bool m_Interacting = false;
     private bool m_StartInteraction = false;
     private bool m_EndInteraction = false;
@@ -50,7 +52,7 @@ public class ObjectController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction)
+        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction)
         {
             m_Interacting = true;
             GetComponent<ActionManager>().PrintDescription(m_Description, m_Action);
@@ -60,12 +62,16 @@ public class ObjectController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (m_Interacting)
+        if (m_Possible && m_Interacting)
         {
             GetComponent<ActionManager>().HideDescription();
             m_StartInteraction = false;
             m_Interacting = false;
             m_EndInteraction = false;
+            if (m_OneShot)
+            {
+                m_Possible = false;
+            }
         }
     }
 }

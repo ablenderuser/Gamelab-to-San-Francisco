@@ -2870,6 +2870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: Chat endormi
   m_Action: Caresser
+  m_OneShot: 0
   m_CoAnimatedObject: {fileID: 0}
 --- !u!1 &1387158998
 GameObject:
@@ -4231,6 +4232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: Pile de linge
   m_Action: Ranger
+  m_OneShot: 1
   m_CoAnimatedObject: {fileID: 1261106595}
 --- !u!95 &1904487866
 Animator:
