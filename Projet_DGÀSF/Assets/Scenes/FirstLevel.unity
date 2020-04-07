@@ -2854,6 +2854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
+  m_HealOrDamage: Heal
   m_ActionButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
     type: 3}
 --- !u!114 &1381695037
@@ -4216,6 +4217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
+  m_HealOrDamage: Damage
   m_ActionButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
     type: 3}
 --- !u!114 &1904487865

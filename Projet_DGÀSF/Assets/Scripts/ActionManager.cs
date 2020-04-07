@@ -8,6 +8,9 @@ public class ActionManager : MonoBehaviour
     private GameObject m_ActionBox;
     private GameObject m_DescriptionTextUI;
     private Text m_DescriptionText;
+	private GameObject m_HealOrDamageUI;
+	
+	public string m_HealOrDamage;
 
     public GameObject m_ActionButtonPrefab;
 
@@ -38,11 +41,21 @@ public class ActionManager : MonoBehaviour
         GameObject m_ActionTextUI = GameObject.Find("ChoiceText");
         m_ActionText = m_ActionTextUI.GetComponent<Text>();
         m_ActionText.text = action;
+		
+
     }
 
     public void DoAction()
     {
         GetComponent<ObjectController>().DoAction();
+		if (m_HealOrDamage == "Heal")
+		{
+			HeartHealthVisual.heartHealthSystemStatic.Heal(4);
+		}
+		if (m_HealOrDamage == "Damage")
+		{
+			HeartHealthVisual.heartHealthSystemStatic.Damage(4);
+		}
         HideDescription();
     }
 
