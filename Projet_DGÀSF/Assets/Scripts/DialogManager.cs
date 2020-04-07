@@ -50,20 +50,20 @@ public class DialogManager : MonoBehaviour
 
         m_DialogBox = Instantiate(m_DialogBoxPrefab, transform.position, transform.rotation);
 
-        m_DialogTextUI = GameObject.Find("DialogText");
+        m_DialogTextUI = GameObject.Find("InteractionBoxText");
         m_DialogText = m_DialogTextUI.GetComponent<Text>();
         m_DialogText.text = dialog.m_Sentence;
 
         if (m_Dialog.m_Choices[0] != "")
         {
             m_CanvasFirstChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-            m_FirstChoiceButtonUI = GameObject.Find("ChoiceButton");
+            m_FirstChoiceButtonUI = GameObject.Find("InteractionButton");
             m_FirstChoiceButtonUI.name = "FirstChoiceButton";
             m_FirstChoiceButtonUI.transform.Translate(m_Decal1);
             m_FirstChoiceButton = m_FirstChoiceButtonUI.GetComponent<Button>();
             m_FirstChoiceButton.onClick.AddListener(FirstChoiceDialog);
 
-            GameObject m_FirstChoiceTextUI = GameObject.Find("ChoiceText");
+            GameObject m_FirstChoiceTextUI = GameObject.Find("InteractionButtonText");
             m_FirstChoiceTextUI.name = "FirstChoiceText";
             m_FirstChoiceText = m_FirstChoiceTextUI.GetComponent<Text>();
             m_FirstChoiceText.text = m_Dialog.m_Choices[0];
@@ -72,13 +72,13 @@ public class DialogManager : MonoBehaviour
         if (m_Dialog.m_Choices[1] != "")
         {
             m_CanvasSecondChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-            m_SecondChoiceButtonUI = GameObject.Find("ChoiceButton");
+            m_SecondChoiceButtonUI = GameObject.Find("InteractionButton");
             m_SecondChoiceButtonUI.name = "SecondChoiceButton";
             m_SecondChoiceButtonUI.transform.Translate(m_Decal2);
             m_SecondChoiceButton = m_SecondChoiceButtonUI.GetComponent<Button>();
             m_SecondChoiceButton.onClick.AddListener(SecondChoiceDialog);
 
-            GameObject m_SecondChoiceTextUI = GameObject.Find("ChoiceText");
+            GameObject m_SecondChoiceTextUI = GameObject.Find("InteractionButtonText");
             m_SecondChoiceTextUI.name = "SecondChoiceText";
             m_SecondChoiceText = m_SecondChoiceTextUI.GetComponent<Text>();
             m_SecondChoiceText.text = m_Dialog.m_Choices[1];
@@ -87,13 +87,13 @@ public class DialogManager : MonoBehaviour
         if (m_Dialog.m_Choices[2] != "")
         {
             m_CanvasThirdChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-            m_ThirdChoiceButtonUI = GameObject.Find("ChoiceButton");
+            m_ThirdChoiceButtonUI = GameObject.Find("InteractionButton");
             m_ThirdChoiceButtonUI.name = "ThirdChoiceButton";
             m_ThirdChoiceButtonUI.transform.Translate(m_Decal3);
             m_ThirdChoiceButton = m_ThirdChoiceButtonUI.GetComponent<Button>();
             m_ThirdChoiceButton.onClick.AddListener(ThirdChoiceDialog);
 
-            GameObject m_ThirdChoiceTextUI = GameObject.Find("ChoiceText");
+            GameObject m_ThirdChoiceTextUI = GameObject.Find("InteractionButtonText");
             m_ThirdChoiceTextUI.name = "ThirdChoiceText";
             m_ThirdChoiceText = m_ThirdChoiceTextUI.GetComponent<Text>();
             m_ThirdChoiceText.text = m_Dialog.m_Choices[2];
@@ -154,13 +154,13 @@ public class DialogManager : MonoBehaviour
             if (m_Dialog.m_Choices[0] != "")
             {
                 m_CanvasFirstChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-                m_FirstChoiceButtonUI = GameObject.Find("ChoiceButton");
+                m_FirstChoiceButtonUI = GameObject.Find("InteractionButton");
                 m_FirstChoiceButtonUI.name = "FirstChoiceButton";
                 m_FirstChoiceButtonUI.transform.Translate(m_Decal1);
                 m_FirstChoiceButton = m_FirstChoiceButtonUI.GetComponent<Button>();
                 m_FirstChoiceButton.onClick.AddListener(FirstChoiceDialog);
 
-                GameObject m_FirstChoiceTextUI = GameObject.Find("ChoiceText");
+                GameObject m_FirstChoiceTextUI = GameObject.Find("InteractionButtonText");
                 m_FirstChoiceTextUI.name = "FirstChoiceText";
                 m_FirstChoiceText = m_FirstChoiceTextUI.GetComponent<Text>();
                 m_FirstChoiceText.text = m_Dialog.m_Choices[0];
@@ -169,13 +169,13 @@ public class DialogManager : MonoBehaviour
             if (m_Dialog.m_Choices[1] != "")
             {
                 m_CanvasSecondChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position + m_Decal2, transform.rotation);
-                m_SecondChoiceButtonUI = GameObject.Find("ChoiceButton");
+                m_SecondChoiceButtonUI = GameObject.Find("InteractionButton");
                 m_SecondChoiceButtonUI.name = "SecondChoiceButton";
                 m_SecondChoiceButtonUI.transform.Translate(m_Decal2);
                 m_SecondChoiceButton = m_SecondChoiceButtonUI.GetComponent<Button>();
                 m_SecondChoiceButton.onClick.AddListener(SecondChoiceDialog);
 
-                GameObject m_SecondChoiceTextUI = GameObject.Find("ChoiceText");
+                GameObject m_SecondChoiceTextUI = GameObject.Find("InteractionButtonText");
                 m_SecondChoiceTextUI.name = "SecondChoiceText";
                 m_SecondChoiceText = m_SecondChoiceTextUI.GetComponent<Text>();
                 m_SecondChoiceText.text = m_Dialog.m_Choices[1];
@@ -184,13 +184,13 @@ public class DialogManager : MonoBehaviour
             if (m_Dialog.m_Choices[2] != "")
             {
                 m_CanvasThirdChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position + m_Decal3, transform.rotation);
-                m_ThirdChoiceButtonUI = GameObject.Find("ChoiceButton");
+                m_ThirdChoiceButtonUI = GameObject.Find("InteractionButton");
                 m_ThirdChoiceButtonUI.name = "ThirdChoiceButton";
                 m_ThirdChoiceButtonUI.transform.Translate(m_Decal3);
                 m_ThirdChoiceButton = m_ThirdChoiceButtonUI.GetComponent<Button>();
                 m_ThirdChoiceButton.onClick.AddListener(ThirdChoiceDialog);
 
-                GameObject m_ThirdChoiceTextUI = GameObject.Find("ChoiceText");
+                GameObject m_ThirdChoiceTextUI = GameObject.Find("InteractionButtonText");
                 m_ThirdChoiceTextUI.name = "ThirdChoiceText";
                 m_ThirdChoiceText = m_ThirdChoiceTextUI.GetComponent<Text>();
                 m_ThirdChoiceText.text = m_Dialog.m_Choices[2];
@@ -199,13 +199,13 @@ public class DialogManager : MonoBehaviour
         else
         {
             m_CanvasFinishDialogButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-            m_FinishDialogButtonUI = GameObject.Find("ChoiceButton");
+            m_FinishDialogButtonUI = GameObject.Find("InteractionButton");
             m_FinishDialogButtonUI.name = "FinishDialogButton";
             m_FinishDialogButtonUI.transform.Translate(m_DecalF);
             m_FinishDialogButton = m_FinishDialogButtonUI.GetComponent<Button>();
             m_FinishDialogButton.onClick.AddListener(EndDialog);
 
-            GameObject m_FinishDialogTextUI = GameObject.Find("ChoiceText");
+            GameObject m_FinishDialogTextUI = GameObject.Find("InteractionButtonText");
             m_FinishDialogTextUI.name = "ThirdChoiceText";
             m_FinishDialogText = m_FinishDialogTextUI.GetComponent<Text>();
             m_FinishDialogText.text = "Fin";
