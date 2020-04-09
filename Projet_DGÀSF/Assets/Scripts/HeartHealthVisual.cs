@@ -42,7 +42,7 @@ public class HeartHealthVisual : MonoBehaviour
             HeartHealthSystem.Heart heart = heartList[i];
             CreateHeartImage(heartAnchoredPosition).SetHeartFragments(heart.GetFragmentAmount());
             heartAnchoredPosition += new Vector2(20, 0);
-            if (i == 9 || i == 19 || i == 29)
+            if (i%10==9)
             {
                 
                 heartAnchoredPosition += new Vector2(-200, -40*( (i/10)+1   ));
@@ -109,7 +109,7 @@ public class HeartHealthVisual : MonoBehaviour
         heartGameObject.transform.localPosition = Vector3.zero;
 
         heartGameObject.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
-        heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(45, 45);
+        heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(30, 60);
 
         Image heartImageUI = heartGameObject.GetComponent<Image>();
         heartImageUI.sprite = heart1Sprite;
