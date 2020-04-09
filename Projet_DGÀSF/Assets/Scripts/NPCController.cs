@@ -7,7 +7,6 @@ using System.IO;
 public class NPCController : MonoBehaviour
 {
     public Object m_JsonFile;
-    public bool m_OneShot;
 
     private Dialog m_Dialog;
 
@@ -35,6 +34,11 @@ public class NPCController : MonoBehaviour
         m_StartDialog = false;
     }
 
+    public void SetImpossible()
+    {
+        m_Possible = false;
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog)
@@ -53,10 +57,6 @@ public class NPCController : MonoBehaviour
             m_StartDialog = false;
             m_Interacting = false;
             m_EndDialog = false;
-            if (m_OneShot)
-            {
-                m_Possible = false;
-            }
         }
     }
 }

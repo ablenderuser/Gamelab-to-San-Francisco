@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
+    public bool m_OneShot;
+
     public GameObject m_DialogBoxPrefab;
 
     private GameObject m_DialogBox;
@@ -209,6 +211,7 @@ public class DialogManager : MonoBehaviour
             m_FinishDialogTextUI.name = "ThirdChoiceText";
             m_FinishDialogText = m_FinishDialogTextUI.GetComponent<Text>();
             m_FinishDialogText.text = "Fin";
+            GetComponent<NPCController>().SetImpossible();
         }
     }
 

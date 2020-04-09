@@ -1040,6 +1040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 0
   m_HealOrDamage: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -1059,7 +1060,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: "Porte ferm\xE9e \xE0 cl\xE9"
   m_Action: Ouvrir
-  m_OneShot: 0
   m_CoAnimatedObject: {fileID: 0}
 --- !u!60 &702995354
 PolygonCollider2D:
@@ -1205,6 +1205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 0
   m_HealOrDamage: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -1224,7 +1225,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: "Cl\xE9"
   m_Action: Ramasser
-  m_OneShot: 1
   m_CoAnimatedObject: {fileID: 0}
 --- !u!60 &741965623
 PolygonCollider2D:
@@ -1402,6 +1402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf01cd31e2c1c342863eaefb006a270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 1
   m_DialogBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
   m_ChoiceButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
@@ -1423,7 +1424,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JsonFile: {fileID: 102900000, guid: d55d572644fb678788fcffed05fb0641, type: 3}
-  m_OneShot: 1
 --- !u!60 &1103895728
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1806,6 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 0
   m_HealOrDamage: Damage
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -1825,7 +1826,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: "Canap\xE9 tr\xE8s lourd"
   m_Action: Pousser
-  m_OneShot: 0
   m_CoAnimatedObject: {fileID: 0}
 --- !u!60 &1321617111
 PolygonCollider2D:
@@ -2113,6 +2113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 1
   m_HealOrDamage: Heal
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -2132,7 +2133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: Chat endormi
   m_Action: Caresser
-  m_OneShot: 1
   m_CoAnimatedObject: {fileID: 0}
 --- !u!1 &1387158998
 GameObject:
@@ -4233,6 +4233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 1
   m_HealOrDamage: Damage
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -4252,7 +4253,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: Pile de linge
   m_Action: Ranger
-  m_OneShot: 1
   m_CoAnimatedObject: {fileID: 1261106595}
 --- !u!95 &1904487866
 Animator:
@@ -4381,7 +4381,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929756981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.25, y: -0.13, z: 0}
+  m_LocalPosition: {x: -3.62, y: -0.43, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 1721179710}
@@ -4761,6 +4761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OneShot: 1
   m_HealOrDamage: Damage
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -4780,7 +4781,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: "Livres en d\xE9sordre"
   m_Action: Ranger
-  m_OneShot: 1
   m_CoAnimatedObject: {fileID: 0}
 --- !u!60 &2129100399
 PolygonCollider2D:

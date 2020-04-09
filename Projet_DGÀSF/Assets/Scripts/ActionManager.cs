@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ActionManager : MonoBehaviour
 {
+    public bool m_OneShot;
     public string m_HealOrDamage;
 
     //private GameObject m_HealOrDamageUI;
@@ -61,6 +62,10 @@ public class ActionManager : MonoBehaviour
             }
         }
         HideDescription();
+        if (m_OneShot)
+        {
+            GetComponent<ObjectController>().SetImpossible();
+        }
     }
 
     public void HideDescription()

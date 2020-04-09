@@ -8,7 +8,6 @@ public class ObjectController : MonoBehaviour
 {
     public string m_Description;
     public string m_Action;
-    public bool m_OneShot;
     public GameObject m_CoAnimatedObject;
 
     private Animator m_Animator;
@@ -41,6 +40,11 @@ public class ObjectController : MonoBehaviour
         m_StartInteraction = false;
     }
 
+    public void SetImpossible()
+    {
+        m_Possible = false;
+    }
+
     public void DoAction()
     {
         m_Animator.SetBool(m_Action, true);
@@ -68,10 +72,6 @@ public class ObjectController : MonoBehaviour
             m_StartInteraction = false;
             m_Interacting = false;
             m_EndInteraction = false;
-            if (m_OneShot)
-            {
-                m_Possible = false;
-            }
         }
     }
 }
