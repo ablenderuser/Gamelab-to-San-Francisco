@@ -20,7 +20,7 @@ public class CollisionHandling : MonoBehaviour
         Debug.Log(INzone);
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!INzone)
         {
