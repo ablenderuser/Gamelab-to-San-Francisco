@@ -13,8 +13,23 @@ public class SceneLauncher : MonoBehaviour
         SceneManager.LoadScene("Credits");
     }
 
-    public void LaunchFirstLevel()
+    public void LaunchCharacterChoice()
     {
-        SceneManager.LoadScene("FirstLevel");
+        SceneManager.LoadScene("CharacterChoice");
+    }
+
+    public void LaunchFirstLevelAutiste()
+    {
+        SceneManager.LoadScene("FirstLevelAutiste");
+    }
+
+    public void LaunchFirstLevelBipolaire()
+    {
+        SceneManager.LoadScene("FirstLevelBipolaire");
+    }
+
+    public void LaunchFirstLevelFibro()
+    {
+        SceneManager.LoadScene("FirstLevelFibro");
     }
 }

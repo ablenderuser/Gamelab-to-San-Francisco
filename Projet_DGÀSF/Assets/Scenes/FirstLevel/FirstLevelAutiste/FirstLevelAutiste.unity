@@ -137,13 +137,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122633555}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.91, y: 0, z: 0}
+  m_LocalRotation: {x: 0.13654569, y: -0.63056344, z: 0.11396759, w: 0.7554842}
+  m_LocalPosition: {x: 225, y: 84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.49, y: -79.7, z: 0}
 --- !u!108 &122633557
 Light:
   m_ObjectHideFlags: 0
@@ -153,9 +153,9 @@ Light:
   m_GameObject: {fileID: 122633555}
   m_Enabled: 1
   serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
-  m_Intensity: 25
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 7
   m_Range: 751.5917
   m_SpotAngle: 40
   m_CookieSize: 10
@@ -525,7 +525,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.78}
+    oldSize: {x: 0.35, y: 0.77}
     newSize: {x: 0.37, y: 0.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -571,7 +571,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300006, guid: cdc008faec5081d4abdc981295dcd5eb, type: 3}
+  m_Sprite: {fileID: 21300008, guid: ef17b4397e9c0624f8eca71ab24195bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -667,7 +667,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.78}
+    oldSize: {x: 0.35, y: 0.77}
     newSize: {x: 0.37, y: 0.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -930,7 +930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548.7, y: 268.5, z: -636}
+  m_LocalPosition: {x: 548.7, y: 268.5, z: -45}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 122633556}

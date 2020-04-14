@@ -547,10 +547,10 @@ TextureImporter:
       name: Image41_21
       rect:
         serializedVersion: 2
-        x: 1359
-        y: 264
-        width: 85
-        height: 171
+        x: 1363
+        y: 269
+        width: 77
+        height: 162
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,10 +567,10 @@ TextureImporter:
       name: Image41_22
       rect:
         serializedVersion: 2
-        x: 1463
-        y: 264
-        width: 85
-        height: 171
+        x: 1467
+        y: 269
+        width: 77
+        height: 162
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,10 +587,10 @@ TextureImporter:
       name: Image41_23
       rect:
         serializedVersion: 2
-        x: 1569
-        y: 264
-        width: 86
-        height: 171
+        x: 1573
+        y: 269
+        width: 77
+        height: 162
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
