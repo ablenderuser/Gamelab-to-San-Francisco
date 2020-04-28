@@ -3889,6 +3889,7 @@ GameObject:
   - component: {fileID: 1555327892}
   - component: {fileID: 1555327891}
   - component: {fileID: 1555327890}
+  - component: {fileID: 1555327893}
   m_Layer: 0
   m_Name: "Pani\xE8re \xE0 linge"
   m_TagString: Untagged
@@ -3940,7 +3941,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3955,13 +3956,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.125, y: 0.114999995}
-      - {x: -0.175, y: 0.074999996}
+    - - {x: -0.11239433, y: -0.0022947788}
+      - {x: -0.17342496, y: -0.006596446}
       - {x: -0.175, y: -0.105}
       - {x: -0.16499999, y: -0.114999995}
-      - {x: 0.125, y: -0.114999995}
-      - {x: 0.175, y: -0.055}
-      - {x: 0.175, y: 0.114999995}
+      - {x: 0.10342145, y: -0.111120224}
+      - {x: 0.17120051, y: -0.028501332}
+      - {x: 0.16766095, y: -0.0072377324}
+      - {x: 0.048941612, y: -0.0022944808}
 --- !u!212 &1555327892
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4010,6 +4012,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1555327893
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555327888}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1575278005
 GameObject:
   m_ObjectHideFlags: 0

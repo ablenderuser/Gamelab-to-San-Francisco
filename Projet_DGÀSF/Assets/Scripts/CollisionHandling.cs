@@ -20,7 +20,7 @@ public class CollisionHandling : MonoBehaviour
         Debug.Log(INzone);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(BoxCollider2D collision)
     {
         if (!INzone)
         {
@@ -32,7 +32,7 @@ public class CollisionHandling : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(BoxCollider2D collision)
     {
         sprite.sortingOrder = 3;
         Vector3 newPosition = transform.position;
