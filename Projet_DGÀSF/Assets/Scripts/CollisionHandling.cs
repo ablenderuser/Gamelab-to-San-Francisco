@@ -25,7 +25,7 @@ public class CollisionHandling : MonoBehaviour
         if (!INzone)
         {
             INzone = true;
-            sprite.sortingOrder = 2;
+            sprite.sortingOrder = 5;
             Vector3 newPosition = transform.position;
             newPosition.z = transform.position.z + 0.5f;
             transform.position = newPosition;
@@ -34,7 +34,7 @@ public class CollisionHandling : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        sprite.sortingOrder = 0;
+        sprite.sortingOrder = 3;
         Vector3 newPosition = transform.position;
         newPosition.z = transform.position.z-0.5f;
         transform.position = newPosition;
