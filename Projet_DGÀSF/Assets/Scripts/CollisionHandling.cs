@@ -26,6 +26,7 @@ public class CollisionHandling : MonoBehaviour
         {
             INzone = true;
             sprite.sortingOrder = 5;
+            Debug.Log("here");
             Vector3 newPosition = transform.position;
             newPosition.z = transform.position.z + 0.5f;
             transform.position = newPosition;
