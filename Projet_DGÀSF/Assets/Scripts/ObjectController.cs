@@ -9,6 +9,8 @@ public class ObjectController : MonoBehaviour
     public string m_Description;
     public string m_Action;
     public GameObject m_CoAnimatedObject;
+    public GameObject m_InvisibleObject;
+    public bool m_Movable;
 
     private Animator m_Animator;
     private Animator m_CoAnimator;
@@ -17,7 +19,7 @@ public class ObjectController : MonoBehaviour
     private bool m_Interacting = false;
     private bool m_StartInteraction = false;
     private bool m_EndInteraction = false;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,10 +30,17 @@ public class ObjectController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-
+        if (m_InvisibleObject != null)
+        {
+            float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
+            if (d > 100)
+            {
+                Debug.Log("Pop");
+                m_InvisibleObject.SetActive(true);
+            }
+        }
     }
 
     public void SetEndInteraction()
@@ -47,10 +56,15 @@ public class ObjectController : MonoBehaviour
 
     public void DoAction()
     {
+        Debug.Log("Action");
         m_Animator.SetBool(m_Action, true);
         if (m_CoAnimatedObject != null)
         {
             m_CoAnimator.SetBool(m_Action, true);
+        }
+        if (m_Movable)
+        {
+            GetComponent<Rigidbody2D>().mass = 0.005f;
         }
     }
 

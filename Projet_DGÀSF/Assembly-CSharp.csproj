@@ -60,6 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ActionSet.cs" />
+    <Compile Include="Assets\Push.cs" />
+    <Compile Include="Assets\Scripts\ActionEffects.cs" />
     <Compile Include="Assets\Scripts\ActionManager.cs" />
     <Compile Include="Assets\Scripts\CollisionHandling.cs" />
     <Compile Include="Assets\Scripts\Dialog.cs" />

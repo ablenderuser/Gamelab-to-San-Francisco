@@ -49,6 +49,7 @@ public class ActionManager : MonoBehaviour
 
     public void DoAction()
     {
+        Debug.Log("Action0");
         GetComponent<ObjectController>().DoAction();
 		if (m_HealOrDamage == "Heal")
 		{

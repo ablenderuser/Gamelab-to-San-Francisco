@@ -22,12 +22,6 @@ public class NPCController : MonoBehaviour
         m_Dialog = CreateFromJSON(jsonString);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetEndDialog()
     {
         m_EndDialog = true;
