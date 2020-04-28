@@ -16,7 +16,7 @@ public class CollisionHandlingParent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(INzone);
+        //Debug.Log(INzone);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

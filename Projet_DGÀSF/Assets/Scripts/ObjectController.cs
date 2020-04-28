@@ -11,6 +11,7 @@ public class ObjectController : MonoBehaviour
     public GameObject m_CoAnimatedObject;
     public GameObject m_InvisibleObject;
     public bool m_Movable;
+    private Rigidbody2D myScriptsRigidbody2D;
 
     private Animator m_Animator;
     private Animator m_CoAnimator;
@@ -23,6 +24,7 @@ public class ObjectController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        myScriptsRigidbody2D = GetComponent<Rigidbody2D>();
         m_Animator = GetComponent<Animator>();
         if (m_CoAnimatedObject != null)
         {
@@ -58,6 +60,10 @@ public class ObjectController : MonoBehaviour
     {
         Debug.Log("Action");
         m_Animator.SetBool(m_Action, true);
+        if(gameObject.tag == "linge"){
+         myScriptsRigidbody2D.isKinematic = true;
+        }
+        
         if (m_CoAnimatedObject != null)
         {
             m_CoAnimator.SetBool(m_Action, true);
