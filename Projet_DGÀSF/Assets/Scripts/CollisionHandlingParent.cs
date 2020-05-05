@@ -35,7 +35,7 @@ public class CollisionHandlingParent : MonoBehaviour
     {
         sprite.sortingOrder = 3;
         Vector3 newPosition = transform.parent.position;
-        newPosition.z = transform.parent.position.z-0.5f;
+        newPosition.z = transform.parent.position.z - 0.5f;
         transform.parent.position = newPosition;
         INzone =false;
     }

@@ -37,7 +37,7 @@ public class ObjectController : MonoBehaviour
         if (m_InvisibleObject != null)
         {
             float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
-            if (d > 100)
+            if (d > 50)
             {
                 Debug.Log("Pop");
                 m_InvisibleObject.SetActive(true);
