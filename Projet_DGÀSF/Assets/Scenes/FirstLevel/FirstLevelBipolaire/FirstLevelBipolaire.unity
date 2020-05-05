@@ -966,6 +966,7 @@ MonoBehaviour:
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
+  m_ToCollectObject: 0
 --- !u!95 &451967643
 Animator:
   serializedVersion: 3
@@ -1405,6 +1406,7 @@ MonoBehaviour:
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
+  m_ToCollectObject: 0
 --- !u!95 &502591425
 Animator:
   serializedVersion: 3
@@ -1579,6 +1581,7 @@ MonoBehaviour:
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
+  m_ToCollectObject: 0
 --- !u!95 &540028314
 Animator:
   serializedVersion: 3
@@ -2033,6 +2036,7 @@ MonoBehaviour:
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
+  m_ToCollectObject: 0
 --- !u!60 &1457286780
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4297,6 +4301,7 @@ MonoBehaviour:
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 1457286776}
   m_Movable: 1
+  m_ToCollectObject: 0
 --- !u!60 &1977589662
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4566,6 +4571,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2380359959883021263, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: heart0Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 249fe951e557f1f4180595233e317946,
+        type: 3}
+    - target: {fileID: 2380359959883021263, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: heart1Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2507c5a0442f9c044bc50a242b948285,
+        type: 3}
+    - target: {fileID: 2380359959883021263, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: heart2Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b6ef471ca0709814e928f06c8f4caf01,
+        type: 3}
+    - target: {fileID: 2380359959883021263, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: heart3Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0c8aa59f9aa734b49a941d76f233ca3d,
+        type: 3}
+    - target: {fileID: 2380359959883021263, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: heartFullAnimationClip
+      value: 
+      objectReference: {fileID: 7400000, guid: b89f39c360f229341978069eec7298cd, type: 2}
     - target: {fileID: 2380359961595172784, guid: c8f8fd29e824d7945a837a5704a7153c,
         type: 3}
       propertyPath: m_LocalPosition.x

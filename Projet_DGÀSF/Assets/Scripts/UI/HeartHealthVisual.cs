@@ -12,10 +12,12 @@ public class HeartHealthVisual : MonoBehaviour
     [SerializeField] private Sprite heart2Sprite;
     [SerializeField] private Sprite heart3Sprite;
     [SerializeField] private Sprite heart4Sprite;
+    [SerializeField] private AnimationClip heartFullAnimationClip;
+
 
     private List<HeartImage> HeartImageList;
     private HeartHealthSystem heartHealthSystem;
-
+    private bool isHealing;
     private void Awake()
     {
         HeartImageList = new List<HeartImage>();
@@ -23,6 +25,8 @@ public class HeartHealthVisual : MonoBehaviour
 
     private void Start()
     {
+        InvokeRepeating("HealingAnimatedPeriodic", 0f, 0.1f);
+        //FunctionPeriodic.Create(HealingAnimatedPeriodic,.05f);
         HeartHealthSystem heartHealthSystem = new HeartHealthSystem(40);
         SetHeartHealthSystem(heartHealthSystem);
 
@@ -69,7 +73,8 @@ public class HeartHealthVisual : MonoBehaviour
     }
     private void heartHealthSystem_OnHealed(object sender, System.EventArgs e)
     {
-        RefreshAllHearts();
+        //RefreshAllHearts();
+        isHealing = true;
     }
 
     private void RefreshAllHearts()
@@ -104,33 +109,73 @@ public class HeartHealthVisual : MonoBehaviour
 
     private HeartImage CreateHeartImage( Vector2 anchoredPosition)
     {
-        GameObject heartGameObject = new GameObject("Heart", typeof(Image));
+        GameObject heartGameObject = new GameObject("Heart", typeof(Image),typeof(Animation));
         heartGameObject.transform.parent = transform;
         heartGameObject.transform.localPosition = Vector3.zero;
 
         heartGameObject.GetComponent<RectTransform>().anchoredPosition = anchoredPosition;
         heartGameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(30, 60);
+        heartGameObject.GetComponent<Animation>().AddClip(heartFullAnimationClip,"HeartFull");
 
         Image heartImageUI = heartGameObject.GetComponent<Image>();
         heartImageUI.sprite = heart1Sprite;
 
-        HeartImage heartImage = new HeartImage(this,heartImageUI);
+        HeartImage heartImage = new HeartImage(this,heartImageUI,heartGameObject.GetComponent<Animation>());
         HeartImageList.Add(heartImage);
 
         return heartImage;
     }
+    private void HealingAnimatedPeriodic(){
+
+        if(isHealing){
+            bool fullyHealed =true;
+            List<HeartHealthSystem.Heart> heartList = heartHealthSystem.GetHeartList();
+            for (int i = 0 ; i < heartList.Count;i++) 
+            {
+                HeartImage heartImage = HeartImageList[i];
+                HeartHealthSystem.Heart heart = heartList[i];
+
+
+                if (heartImage.GetFragmentAmount() != heart.GetFragmentAmount())
+                {
+                    heartImage.addHeartVisualFragment();
+                    if(heartImage.GetFragmentAmount() == HeartHealthSystem.MAX_FRAGMENT_AMOUNT){
+                        heartImage.PlayHeartFullAnimation();
+                        //heartImage.PlayHeartFullAnimation();
+                    }
+
+                    fullyHealed = false;
+                    break;
+                }
+
+            }
+            if(fullyHealed){
+                isHealing = false;
+            }
+        }
+
+        
+    }
+
+
+
 
     public class HeartImage
     {
+        private int fragments;
         private Image heartImage;
         private HeartHealthVisual heartHealthVisual;
-        public HeartImage(HeartHealthVisual heartHealthVisual, Image heartImage)
+        private Animation animation;
+
+        public HeartImage(HeartHealthVisual heartHealthVisual, Image heartImage,Animation animation)
         {
             this.heartImage = heartImage;
             this.heartHealthVisual = heartHealthVisual;
+            this.animation = animation;
         }
         public void SetHeartFragments(int fragments)
         {
+            this.fragments = fragments;
             switch (fragments)
             {
                 case 0: heartImage.enabled  = false; break;
@@ -142,6 +187,15 @@ public class HeartHealthVisual : MonoBehaviour
 
                 //case 0: heartImage.sprite = heartHealthVisual.heart0Sprite; break;
             }
+        }
+        public int GetFragmentAmount(){
+            return this.fragments;
+        }
+        public void addHeartVisualFragment(){
+            SetHeartFragments(fragments+1);
+        }
+        public void PlayHeartFullAnimation(){
+            animation.Play("HeartFull",PlayMode.StopAll);
         }
     }
 }
