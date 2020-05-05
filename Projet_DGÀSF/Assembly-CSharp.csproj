@@ -62,18 +62,17 @@
   <ItemGroup>
     <Compile Include="Assets\ActionSet.cs" />
     <Compile Include="Assets\Push.cs" />
-    <Compile Include="Assets\Scripts\ActionEffects.cs" />
-    <Compile Include="Assets\Scripts\ActionManager.cs" />
-    <Compile Include="Assets\Scripts\CollisionHandling.cs" />
-    <Compile Include="Assets\Scripts\CollisionHandlingParent.cs" />
-    <Compile Include="Assets\Scripts\Dialog.cs" />
-    <Compile Include="Assets\Scripts\DialogManager.cs" />
-    <Compile Include="Assets\Scripts\HeartHealthSystem.cs" />
-    <Compile Include="Assets\Scripts\HeartHealthVisual.cs" />
-    <Compile Include="Assets\Scripts\NPCController.cs" />
-    <Compile Include="Assets\Scripts\ObjectController.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\SceneLauncher.cs" />
+    <Compile Include="Assets\Scripts\Collision handling\CollisionHandling.cs" />
+    <Compile Include="Assets\Scripts\Collision handling\CollisionHandlingParent.cs" />
+    <Compile Include="Assets\Scripts\Non player control\Dialog.cs" />
+    <Compile Include="Assets\Scripts\Non player control\DialogManager.cs" />
+    <Compile Include="Assets\Scripts\Non player control\NPCController.cs" />
+    <Compile Include="Assets\Scripts\Object control\ActionManager.cs" />
+    <Compile Include="Assets\Scripts\Object control\ObjectController.cs" />
+    <Compile Include="Assets\Scripts\Player control\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Scene management\SceneLauncher.cs" />
+    <Compile Include="Assets\Scripts\UI\HeartHealthSystem.cs" />
+    <Compile Include="Assets\Scripts\UI\HeartHealthVisual.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/sylva/Desktop/Mines de Nancy/Game lab/Gamelab-to-San-Francisco/Projet_DGÀSF/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
