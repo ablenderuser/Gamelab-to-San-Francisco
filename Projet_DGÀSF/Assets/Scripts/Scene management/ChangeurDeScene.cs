@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ActionSet : MonoBehaviour
+public class ChangeurDeScene : MonoBehaviour
 {
+	
+	public string SceneACharger;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +19,10 @@ public class ActionSet : MonoBehaviour
     {
         
     }
+	
+	//Called by button
+	public void changeScene()
+	{
+		SceneManager.LoadScene (SceneACharger); //On change de scène
+	}
 }

@@ -1347,8 +1347,6 @@ GameObject:
   - component: {fileID: 502591422}
   - component: {fileID: 502591427}
   - component: {fileID: 502591426}
-  - component: {fileID: 502591425}
-  - component: {fileID: 502591424}
   - component: {fileID: 502591423}
   m_Layer: 0
   m_Name: Porte
@@ -1380,52 +1378,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 502591421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
+  m_Script: {fileID: 11500000, guid: b131ce22406f74232a38ee7403ce353d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OneShot: 0
-  m_HealOrDamage: 
+  m_Description: "Oh une porte ferm\xE9e\_!"
+  m_Action: "Ouvrons l\xE0 !"
+  m_ActionButtonPrefab: {fileID: 2722800207490098655, guid: da264ea864b14cfb688a0df9ca5bcffe,
+    type: 3}
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
-  m_ActionButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
-    type: 3}
---- !u!114 &502591424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502591421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c455951f59c7b2145822d357820a02c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Description: "Porte ferm\xE9e \xE0 cl\xE9"
-  m_Action: Ouvrir
-  m_CoAnimatedObject: {fileID: 0}
-  m_InvisibleObject: {fileID: 0}
-  m_Movable: 0
-  m_ToCollectObject: 0
---- !u!95 &502591425
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 502591421}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!60 &502591426
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4481,6 +4442,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &2078096659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078096661}
+  - component: {fileID: 2078096660}
+  m_Layer: 0
+  m_Name: "Changeur de sc\xE8ne"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2078096660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078096659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bc46e462978f9dad8a04f9d94c33a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneACharger: SecondLevelAutiste
+--- !u!4 &2078096661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078096659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 527.521, y: 244.42747, z: -3.6077862}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2092538560
 GameObject:
   m_ObjectHideFlags: 0
