@@ -5,12 +5,17 @@ using UnityEngine;
 public class CollisionHandlingParent : MonoBehaviour
 {
     private bool INzone = false;
-    private SpriteRenderer sprite;
+    private Renderer sprite;
 
     // Start is called before the first frame update
     void Start()
     {
     	sprite = GetComponentInParent<SpriteRenderer>();
+        if (sprite == null)
+        {
+            sprite = GetComponentInParent<ParticleSystem>().GetComponent<Renderer>();
+        }
+
     }
 
     // Update is called once per frame
