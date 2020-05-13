@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SecondLevel/SecondLevelBipolaire.unity
+- path: Assets/Scenes/FirstLevel/FirstLevelEnd.unity
   isLoaded: 1
   isActive: 1

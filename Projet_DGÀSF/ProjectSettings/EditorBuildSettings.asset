@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondLevel/SecondLevelAutiste.unity
     guid: 56a045ebc37c3797dad699386543802c
+  - enabled: 1
+    path: Assets/Scenes/SecondLevel/SecondLevelBipolaire.unity
+    guid: 55d200ae4494bf04dbb0b582eaf4a193
+  - enabled: 1
+    path: Assets/Scenes/SecondLevel/SecondLevelFibro.unity
+    guid: 8533e012edeca4a418aa3dd348128a36
   m_configObjects: {}
