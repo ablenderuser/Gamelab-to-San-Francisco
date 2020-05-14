@@ -124,7 +124,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3324281400661956507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 292, y: 137, z: 0}
+  m_LocalPosition: {x: 100, y: 100, z: -0.2}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 7562778844350240322}
@@ -353,11 +353,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 1}
-      - {x: -0.95105654, y: 0.30901697}
-      - {x: -0.5877852, y: -0.80901706}
-      - {x: 0.58778536, y: -0.80901694}
-      - {x: 0.9510565, y: 0.30901712}
+    - - {x: 99.690895, y: 137.84943}
+      - {x: 86.63619, y: 128.6727}
+      - {x: 86.072365, y: 62.289185}
+      - {x: 113.88108, y: 77.88434}
+      - {x: 113.07495, y: 132.33417}
 --- !u!114 &7716831408092987873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a9d80e232d3a959a3adefeaddf7c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCanvas: {fileID: 5718361026608170994}
+  myCanvas: {fileID: 1319603971300966973}
 --- !u!1 &4829069597439680815
 GameObject:
   m_ObjectHideFlags: 0
