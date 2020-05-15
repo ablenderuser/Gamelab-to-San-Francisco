@@ -55,7 +55,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Collision handling\CollisionHandling.cs" />
      <Compile Include="Assets\Scripts\Collision handling\CollisionHandlingParent.cs" />
+     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
      <Compile Include="Assets\Scripts\Inventory\Item.cs" />
+     <Compile Include="Assets\Scripts\Inventory\ItemDatabase.cs" />
      <Compile Include="Assets\Scripts\Non player control\Dialog.cs" />
      <Compile Include="Assets\Scripts\Non player control\DialogManager.cs" />
      <Compile Include="Assets\Scripts\Non player control\NPCController.cs" />
