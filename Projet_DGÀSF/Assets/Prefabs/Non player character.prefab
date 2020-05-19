@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 4370339683998067258}
   - component: {fileID: 4370339683998067257}
   - component: {fileID: 4370339683998067256}
-  - component: {fileID: 4370339683998067253}
   m_Layer: 0
-  m_Name: Soeur
+  m_Name: Non player character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4370339683998067262}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.68, y: 2.46, z: 0}
   m_LocalScale: {x: 1.7999998, y: 1.8000001, z: 1}
   m_Children:
@@ -181,18 +180,6 @@ MonoBehaviour:
   m_Decal2: {x: 0, y: 0, z: 0}
   m_Decal3: {x: 70, y: 0, z: 0}
   m_DecalF: {x: 0, y: 0, z: 0}
---- !u!114 &4370339683998067253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4370339683998067262}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd029f77a52d09498be60501fb4f092, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4370339684880154622
 PrefabInstance:
   m_ObjectHideFlags: 0
