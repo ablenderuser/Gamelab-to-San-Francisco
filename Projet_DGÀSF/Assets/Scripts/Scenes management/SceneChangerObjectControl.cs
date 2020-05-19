@@ -60,8 +60,8 @@ public class SceneChangerObjectControl : MonoBehaviour
         if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction)
         {
             m_Interacting = true;
-			
-			/*
+
+            /*
 			Debug.Log("TriggerStay2D_1");
 			m_ActionBox = Instantiate(m_ActionBoxPrefab, transform.position, transform.rotation);
 			Debug.Log("TriggerStay2D_2");
@@ -84,10 +84,10 @@ public class SceneChangerObjectControl : MonoBehaviour
 			m_ActionText = m_ActionTextUI.GetComponent<Text>();
 			m_ActionText.text = m_Action;
 			*/
-			
-			Debug.Log("TriggerStay2D_8");
+
+            //Debug.Log("TriggerStay2D_8");
 			myCanvas.SetActive(true);
-			Debug.Log("TriggerStay2D_9");
+			//Debug.Log("TriggerStay2D_9");
 			
 			m_StartInteraction = true;
 			
@@ -99,7 +99,8 @@ public class SceneChangerObjectControl : MonoBehaviour
         if (m_Possible && m_Interacting)
         {
             //GetComponent<ActionManager>().HideDescription();
-			myCanvas.SetActive(false);
+            GameObject.Find("SceneChangerObjectDialogText").GetComponent<Text>().text = "Oh ! Une porte fermée à clef !";
+            myCanvas.SetActive(false);
 
             m_StartInteraction = false;
             m_Interacting = false;
@@ -111,7 +112,7 @@ public class SceneChangerObjectControl : MonoBehaviour
 
 	public void DoAction()
     {
-        Debug.Log("Action0");
+        //Debug.Log("Action0");
         HideDescription();
     }
 

@@ -40,7 +40,7 @@ public class ObjectController : MonoBehaviour
             float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
             if (d > 50)
             {
-                Debug.Log("Pop");
+                //Debug.Log("Pop");
                 m_InvisibleObject.SetActive(true);
             }
         }
@@ -59,19 +59,30 @@ public class ObjectController : MonoBehaviour
 
     public void DoAction()
     {
-        Debug.Log("Action");
-        m_Animator.SetBool(m_Action, true);
-        if(gameObject.tag == "linge"){
-         myScriptsRigidbody2D.isKinematic = true;
+        //Debug.Log("Action");
+        if (m_Animator != null)
+        {
+            m_Animator.SetBool(m_Action, true);
         }
-        
         if (m_CoAnimatedObject != null)
         {
             m_CoAnimator.SetBool(m_Action, true);
         }
+
+        if (gameObject.tag == "linge")
+        {
+            myScriptsRigidbody2D.isKinematic = true;
+        }
+
         if (m_Movable)
         {
             GetComponent<Rigidbody2D>().mass = 0.005f;
+        }
+
+        if (m_ToCollectObject)
+        {
+            GameObject.Find("Personnage").GetComponent<Inventory>().GiveItem(m_Description);
+            Object.Destroy(gameObject);
         }
     }
 

@@ -1787,7 +1787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e70a9ec5bf3e54a803055f46cb768f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OneShot: 0
+  m_OneShot: 1
   m_HealOrDamage: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
@@ -1810,7 +1810,7 @@ MonoBehaviour:
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
-  m_ToCollectObject: 0
+  m_ToCollectObject: 1
 --- !u!60 &1457286780
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3948,6 +3948,11 @@ PrefabInstance:
       propertyPath: SceneACharger
       value: SecondLevelBipolaire
       objectReference: {fileID: 0}
+    - target: {fileID: 369294805260694974, guid: 574633e8ac5cccaca9c075e13feb5802,
+        type: 3}
+      propertyPath: compulsoryItem
+      value: "Cl\xE9"
+      objectReference: {fileID: 0}
     - target: {fileID: 3240090936246545511, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4047,6 +4052,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
       value: 1.5837239
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521082423814354918, guid: 574633e8ac5cccaca9c075e13feb5802,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneChangerObjectDialogText
       objectReference: {fileID: 0}
     - target: {fileID: 7562778844350240322, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
@@ -4441,6 +4451,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2380359959636651285, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2380359959883021263, guid: c8f8fd29e824d7945a837a5704a7153c,
         type: 3}
       propertyPath: heart0Sprite
@@ -4529,6 +4544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HealthUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380359961595172785, guid: c8f8fd29e824d7945a837a5704a7153c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8f8fd29e824d7945a837a5704a7153c, type: 3}
