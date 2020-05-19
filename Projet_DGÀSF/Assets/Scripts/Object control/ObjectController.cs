@@ -72,6 +72,7 @@ public class ObjectController : MonoBehaviour
         if (gameObject.tag == "linge")
         {
             myScriptsRigidbody2D.isKinematic = true;
+            Object.Destroy(gameObject);
         }
 
         if (m_Movable)

@@ -21,6 +21,7 @@ public class HeartHealthVisual : MonoBehaviour
     private void Awake()
     {
         HeartImageList = new List<HeartImage>();
+        
     }
 
     private void Start()
