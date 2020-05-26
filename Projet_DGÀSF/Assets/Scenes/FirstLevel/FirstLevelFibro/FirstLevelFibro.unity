@@ -1106,7 +1106,7 @@ PrefabInstance:
     - target: {fileID: 369294805260694974, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
       propertyPath: SceneACharger
-      value: SecondLevelBipolaire
+      value: SecondLevelFibro
       objectReference: {fileID: 0}
     - target: {fileID: 369294805260694974, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
