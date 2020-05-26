@@ -13,7 +13,6 @@ public class ObjectController : MonoBehaviour
     public bool m_Movable;
     public bool m_ToCollectObject;
     private Rigidbody2D myScriptsRigidbody2D;
-    public bool loin;
 
     private Animator m_Animator;
     private Animator m_CoAnimator;
@@ -36,19 +35,7 @@ public class ObjectController : MonoBehaviour
 
     void Update()
     {
-        if (m_InvisibleObject != null)
-        {
-            float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
-            if (d > 50 && loin)
-            {
-                //Debug.Log("Pop");
-                m_InvisibleObject.SetActive(true);
-            }
-            if (loin == false)
-            {
-                m_InvisibleObject.SetActive(true);
-            }
-        }
+
     }
 
     public void SetEndInteraction()
@@ -98,6 +85,22 @@ public class ObjectController : MonoBehaviour
         {
             m_Interacting = true;
             GetComponent<ActionManager>().PrintDescription(m_Description, m_Action);
+            
+            if (m_InvisibleObject != null && m_Movable == true)
+            {
+            float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
+                if (d > 50)
+                {
+                    Debug.Log("Clef rendue visible 1");
+                    m_InvisibleObject.SetActive(true);
+                }
+            }
+            if (m_InvisibleObject != null && m_Movable == false)
+            {
+                Debug.Log("Clef rendue visible 2");
+                m_InvisibleObject.SetActive(true);
+            }
+            
             m_StartInteraction = true;
         }
     }

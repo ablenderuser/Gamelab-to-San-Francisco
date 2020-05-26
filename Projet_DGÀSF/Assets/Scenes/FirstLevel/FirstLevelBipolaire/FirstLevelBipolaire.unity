@@ -973,7 +973,6 @@ MonoBehaviour:
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
   m_ToCollectObject: 0
-  loin: 0
 --- !u!95 &451967643
 Animator:
   serializedVersion: 3
@@ -1420,7 +1419,6 @@ MonoBehaviour:
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
   m_ToCollectObject: 0
-  loin: 0
 --- !u!95 &540028314
 Animator:
   serializedVersion: 3
@@ -1813,7 +1811,6 @@ MonoBehaviour:
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
   m_ToCollectObject: 1
-  loin: 0
 --- !u!60 &1457286780
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4434,13 +4431,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c455951f59c7b2145822d357820a02c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Description: "Canap\xE9 tr\xE8s lourd"
-  m_Action: Pousser
+  m_Description: "Un canap\xE9 tr\xE8s lourd. Il serait plus joli pr\xE8s des plantes
+    !"
+  m_Action: "Un zoli canap\xE9 bleu <3"
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 1457286776}
   m_Movable: 1
   m_ToCollectObject: 0
-  loin: 1
 --- !u!60 &1977589662
 PolygonCollider2D:
   m_ObjectHideFlags: 0
