@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_OneShot: 1
-  m_HealOrDamage: Damage
+  m_HealOrDamage: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
   m_ActionButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
@@ -1516,7 +1516,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8fa493a384de3f347a382bb727f5b284, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae62b6797bee766d88be540c1a99c235, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1769,7 +1769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457286776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9, y: 0.85, z: 0}
+  m_LocalPosition: {x: 4.35, y: -0.85, z: 0}
   m_LocalScale: {x: 0.030000696, y: 0.032365162, z: 1}
   m_Children: []
   m_Father: {fileID: 1575278006}
@@ -4414,7 +4414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_OneShot: 1
-  m_HealOrDamage: Damage
+  m_HealOrDamage: 
   m_ActionBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
   m_ActionButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
@@ -4435,7 +4435,7 @@ MonoBehaviour:
     !"
   m_Action: "Un zoli canap\xE9 bleu <3"
   m_CoAnimatedObject: {fileID: 0}
-  m_InvisibleObject: {fileID: 1457286776}
+  m_InvisibleObject: {fileID: 0}
   m_Movable: 1
   m_ToCollectObject: 0
 --- !u!60 &1977589662
@@ -4940,6 +4940,11 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5168791576196092286, guid: e680041cf423a6648a73b5cf5531a58a,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e680041cf423a6648a73b5cf5531a58a, type: 3}
 --- !u!1001 &7066957355141503171
@@ -4954,6 +4959,11 @@ PrefabInstance:
       propertyPath: m_CoAnimatedObject
       value: 
       objectReference: {fileID: 1555327888}
+    - target: {fileID: 7066957355119627340, guid: 5aee448b3b5f56e4eaac3237e320fef3,
+        type: 3}
+      propertyPath: m_InvisibleObject
+      value: 
+      objectReference: {fileID: 1457286776}
     - target: {fileID: 7066957355119627342, guid: 5aee448b3b5f56e4eaac3237e320fef3,
         type: 3}
       propertyPath: m_LocalPosition.x
