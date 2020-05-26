@@ -13,6 +13,7 @@ public class ObjectController : MonoBehaviour
     public bool m_Movable;
     public bool m_ToCollectObject;
     private Rigidbody2D myScriptsRigidbody2D;
+    public bool loin;
 
     private Animator m_Animator;
     private Animator m_CoAnimator;
@@ -38,9 +39,13 @@ public class ObjectController : MonoBehaviour
         if (m_InvisibleObject != null)
         {
             float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
-            if (d > 50)
+            if (d > 50 && loin)
             {
                 //Debug.Log("Pop");
+                m_InvisibleObject.SetActive(true);
+            }
+            if (loin == false)
+            {
                 m_InvisibleObject.SetActive(true);
             }
         }

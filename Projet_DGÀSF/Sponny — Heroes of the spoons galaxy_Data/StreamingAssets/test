@@ -1,0 +1,15 @@
+{
+"m_Sentence":"Bonjour",
+"m_Choices":["1","2","3"],
+"m_NextSentences":[{
+
+"m_Sentence":"Quoi ?",
+"m_Choices":[],
+"m_NextSentences":[]},
+{"m_Sentence":"Quoi ?",
+"m_Choices":[],
+"m_NextSentences":[]},
+{"m_Sentence":"Quoi ?",
+"m_Choices":[],
+"m_NextSentences":[]}
+]}
