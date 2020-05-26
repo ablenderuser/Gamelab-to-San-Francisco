@@ -26,7 +26,7 @@ public class ChangeurDeScene : MonoBehaviour
 	{
         if (compulsoryItem != null)
         {
-            if (GameObject.Find("Personnage").GetComponent<Inventory>().InInventory(compulsoryItem))
+            if (GameObject.Find("Player character").GetComponent<Inventory>().InInventory(compulsoryItem))
             {
                 SceneManager.LoadScene(SceneACharger); //On change de scène
             }

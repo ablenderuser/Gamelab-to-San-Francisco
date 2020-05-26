@@ -87,7 +87,7 @@ public class ObjectController : MonoBehaviour
 
         if (m_ToCollectObject)
         {
-            GameObject.Find("Personnage").GetComponent<Inventory>().GiveItem(m_Description);
+            GameObject.Find("Player character").GetComponent<Inventory>().GiveItem(m_Description);
             Object.Destroy(gameObject);
         }
     }

@@ -5089,7 +5089,7 @@ PrefabInstance:
     - target: {fileID: 7678406169868129890, guid: aee9dc919b044b549a9bdfabafa7ee8d,
         type: 3}
       propertyPath: m_Name
-      value: Personnage
+      value: Player character
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee9dc919b044b549a9bdfabafa7ee8d, type: 3}
