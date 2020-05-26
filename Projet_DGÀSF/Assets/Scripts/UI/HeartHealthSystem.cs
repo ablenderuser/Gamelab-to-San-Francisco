@@ -6,8 +6,7 @@ using UnityEngine;
 public class HeartHealthSystem : MonoBehaviour
 {
     public const int MAX_FRAGMENT_AMOUNT = 4;
-    private List<Heart> heartList;
-
+    public List<Heart> heartList;
     public event EventHandler OnDamaged;
     public event EventHandler OnHealed;
     public event EventHandler OnDead;
@@ -27,7 +26,19 @@ public class HeartHealthSystem : MonoBehaviour
     {
         return heartList;
     }
-
+    public int GetNumberOfHearts(){
+        int c=0;
+        for(int i = heartList.Count - 1; i>=0 ; i--)
+        {
+            Heart heart = heartList[i];
+            if(heart.GetFragmentAmount()==4)
+            {
+                c=c+1;
+            }
+            
+        }
+        return c;
+    }
     public void Damage(int damageAmount)
     {
         for(int i = heartList.Count - 1; i>=0 ; i--)
@@ -128,6 +139,7 @@ public class HeartHealthSystem : MonoBehaviour
             if ((fragments+healAmount) > MAX_FRAGMENT_AMOUNT)
             {
                 fragments = MAX_FRAGMENT_AMOUNT;
+                
             }
             else
             {

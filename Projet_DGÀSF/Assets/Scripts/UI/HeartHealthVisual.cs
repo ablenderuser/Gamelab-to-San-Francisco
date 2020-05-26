@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System.IO;
 
 public class HeartHealthVisual : MonoBehaviour
 {
@@ -21,7 +21,7 @@ public class HeartHealthVisual : MonoBehaviour
     private void Awake()
     {
         HeartImageList = new List<HeartImage>();
-        
+
     }
 
     private void Start()
@@ -59,9 +59,14 @@ public class HeartHealthVisual : MonoBehaviour
         heartHealthSystem.OnDead += heartHealthSystem_OnDead;
         //heartHealthSystem.Damage(2);
         //heartHealthSystem.Heal(1);
-        heartHealthSystemStatic.Damage(4*35);
+        string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
         
-
+        if(File.Exists(path)){
+            Debug.Log(File.ReadAllText (path)   );
+            heartHealthSystemStatic.Damage(4*(40-int.Parse(File.ReadAllText (path) ) )     );
+        }else{
+            heartHealthSystemStatic.Damage(4*35);
+        }
     }
 
     private void heartHealthSystem_OnDamaged(object sender, System.EventArgs e)
@@ -198,5 +203,13 @@ public class HeartHealthVisual : MonoBehaviour
         public void PlayHeartFullAnimation(){
             animation.Play("HeartFull",PlayMode.StopAll);
         }
+    }
+    void OnDestroy() {
+        print("Script was destroyed");
+        string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
+        print(path);
+        
+        File.WriteAllText(path,heartHealthSystemStatic.GetNumberOfHearts().ToString());
+        
     }
 }
