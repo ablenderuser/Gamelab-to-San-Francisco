@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLauncher : MonoBehaviour
 {
+    
     public void LaunchStartingMenu()
     {
         SceneManager.LoadScene("StartingMenu");
