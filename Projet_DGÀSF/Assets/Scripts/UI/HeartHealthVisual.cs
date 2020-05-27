@@ -60,7 +60,7 @@ public class HeartHealthVisual : MonoBehaviour
         //heartHealthSystem.Damage(2);
         //heartHealthSystem.Heal(1);
         string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
-        
+        Debug.Log("HeartHealthVisual");
         if(File.Exists(path)){
             Debug.Log(File.ReadAllText (path)   );
             heartHealthSystemStatic.Damage(4*(40-int.Parse(File.ReadAllText (path) ) )     );
