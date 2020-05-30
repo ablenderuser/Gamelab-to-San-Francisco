@@ -5304,6 +5304,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2020813816}
     m_Modifications:
+    - target: {fileID: 4370339683998067257, guid: e55de807aff234a42b651f7de98a51c7,
+        type: 3}
+      propertyPath: m_InvisibleObject
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370339683998067257, guid: e55de807aff234a42b651f7de98a51c7,
+        type: 3}
+      propertyPath: m_HealOrDamage
+      value: Damage
+      objectReference: {fileID: 0}
+    - target: {fileID: 4370339683998067257, guid: e55de807aff234a42b651f7de98a51c7,
+        type: 3}
+      propertyPath: m_Damage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4370339683998067262, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_Name

@@ -1,10 +1,10 @@
 {
-"m_Sentence":"Salut, t'as bien dormi ?",
+"m_Sentence":"Salut, bien dormi ?",
 "m_Choices":["", "Non", ""],
 "m_NextSentences":[{}, {
 
-"m_Sentence":"Ah ben dis donc, t'est enjoué pour parler à ta sœur le matin !",
-"m_Choices":["", "Non, j'ai fait un cauchemar", ""],
+"m_Sentence":"Bah alors qu'est ce qui t'arrives ?",
+"m_Choices":["", "J'ai fait un cauchemar", ""],
 "m_NextSentences":[{}, {
 
 "m_Sentence":"Ah oui, lequel ?",

@@ -32,7 +32,7 @@ public class ChangeurDeScene : MonoBehaviour
             }
             else
             {
-                GameObject.Find("SceneChangerObjectDialogText").GetComponent<Text>().text = "Dommage, tu réussiras mieux la prochaine fois...";
+                GameObject.Find("SceneChangerObjectDialogText").GetComponent<Text>().text = "Je crois qu'il te faut une clef...";
             }
         }
         else
