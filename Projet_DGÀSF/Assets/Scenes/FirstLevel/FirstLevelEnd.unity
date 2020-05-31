@@ -394,6 +394,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 964508996855678940, guid: 399b9b56f125e654aaad9b78ec305fdf,
+        type: 3}
+      propertyPath: m_Text
+      value: "\x16\x16Bienvenue dans la galaxie des cuill\xE8res, dont VOUS \xEAtes
+        le h\xE9ros\_! \nUn monde o\xF9 les choses fonctionnent quelque peu diff\xE9remment\u2026
+        \nIci, chacune de vos actions aura des cons\xE9quences, m\xEAme la plus anodine\u2026
+        \nPas de mages, de guerriers ou de soigneurs mais des autistes, des bipolaires
+        et des fibromyalgiques\u2026\nPas de c\u0153urs, d\u2019\xE9nergie ou de mana,
+        ici ce sont les cuill\xE8res\_qui font la loi. Une loi qui limite vos cuill\xE8res
+        \xE0 un nombre donn\xE9 dans la journ\xE9e.\_Vous allez en perdre ou en gagner,
+        mais de quelle mani\xE8re\_? Cela ne d\xE9pend que de vous\u2026 \nCe qui
+        est consid\xE9r\xE9 comme un handicap dans votre monde, ici, est devenu la
+        norme. Par cons\xE9quent l\u2019\xE9nergie, appel\xE9e cuill\xE8re, n\u2019a
+        pas la m\xEAme valeur et s\u2019\xE9puise beaucoup plus vite vous for\xE7ant
+        \xE0 faire des choix drastiques. \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 964508996855678940, guid: 399b9b56f125e654aaad9b78ec305fdf,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 964508996855678940, guid: 399b9b56f125e654aaad9b78ec305fdf,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 964508996855678940, guid: 399b9b56f125e654aaad9b78ec305fdf,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 964508997085946771, guid: 399b9b56f125e654aaad9b78ec305fdf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -504,10 +535,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 964508997486941931, guid: 399b9b56f125e654aaad9b78ec305fdf,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Niveau suivant '
+      objectReference: {fileID: 0}
     - target: {fileID: 964508997930873923, guid: 399b9b56f125e654aaad9b78ec305fdf,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LaunchStartingMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 964508997930873925, guid: 399b9b56f125e654aaad9b78ec305fdf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 964508998013351415, guid: 399b9b56f125e654aaad9b78ec305fdf,
         type: 3}
