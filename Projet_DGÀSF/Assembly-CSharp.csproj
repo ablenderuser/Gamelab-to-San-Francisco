@@ -69,7 +69,6 @@
      <Compile Include="Assets\Scripts\Scenes management\launcherKeydown.cs" />
      <Compile Include="Assets\Scripts\Scenes management\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Scenes management\SceneChangerObjectControl.cs" />
-     <Compile Include="Assets\Scripts\Scenes management\SceneLauncher.cs" />
      <Compile Include="Assets\Scripts\UI\HeartHealthSystem.cs" />
      <Compile Include="Assets\Scripts\UI\HeartHealthVisual.cs" />
      <None Include="Assets\Scripts\UI\numberOfHearts.txt" />

@@ -24,7 +24,7 @@ public class ChangeurDeScene : MonoBehaviour
 	//Called by button
 	public void changeScene()
 	{
-        if (compulsoryItem != null)
+        if (compulsoryItem != "")
         {
             if (GameObject.Find("Player character").GetComponent<Inventory>().InInventory(compulsoryItem))
             {
