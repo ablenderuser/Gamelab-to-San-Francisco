@@ -244,7 +244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ef9252f25c6d11d4fb95d0d19a44d0ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 329d8cc6a6d2d5427ae993770f6bb4da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -277,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &545233242
 AudioSource:
   m_ObjectHideFlags: 0
@@ -285,12 +285,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545233241}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 026daa25cd3a4a6f79703f06f4fedfe3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300004, guid: 7a83003f4298a1247b2ec77229ada0e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9ac7cd91b3ac135e3ac5f82559d386c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -376,7 +376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &252324108
 AudioSource:
   m_ObjectHideFlags: 0
@@ -384,12 +384,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252324107}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 026daa25cd3a4a6f79703f06f4fedfe3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4382,7 +4382,7 @@ PrefabInstance:
     - target: {fileID: 4215539644730989404, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4215539644730989404, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
@@ -4848,7 +4848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: "Un canap\xE9 tr\xE8s lourd. Il serait plus joli pr\xE8s des plantes
     !"
-  m_Action: Bougeons le ?
+  m_Action: "D\xE9placer"
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 1
@@ -5508,6 +5508,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7678406169868129884, guid: aee9dc919b044b549a9bdfabafa7ee8d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: cdc008faec5081d4abdc981295dcd5eb,
+        type: 3}
     - target: {fileID: 7678406169868129886, guid: aee9dc919b044b549a9bdfabafa7ee8d,
         type: 3}
       propertyPath: m_Offset.x

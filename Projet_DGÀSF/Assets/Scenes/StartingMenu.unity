@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2015293148}
+      - m_Target: {fileID: 0}
         m_MethodName: LaunchCharacterChoice
         m_Mode: 1
         m_Arguments:
@@ -555,7 +555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1273606810
 AudioSource:
   m_ObjectHideFlags: 0
@@ -563,12 +563,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273606809}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 026daa25cd3a4a6f79703f06f4fedfe3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -817,7 +817,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2015293148}
+      - m_Target: {fileID: 0}
         m_MethodName: LaunchCredits
         m_Mode: 1
         m_Arguments:
@@ -875,7 +875,6 @@ GameObject:
   - component: {fileID: 2015293146}
   - component: {fileID: 2015293145}
   - component: {fileID: 2015293144}
-  - component: {fileID: 2015293148}
   - component: {fileID: 2015293149}
   m_Layer: 5
   m_Name: Canvas
@@ -966,18 +965,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &2015293148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015293143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be5c8e13b8fd0b4980b02ad956142ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2015293149
 MonoBehaviour:
   m_ObjectHideFlags: 0

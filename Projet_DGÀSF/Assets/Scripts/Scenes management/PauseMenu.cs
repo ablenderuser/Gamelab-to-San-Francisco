@@ -13,7 +13,7 @@ public class PauseMenu : MonoBehaviour
         
         
         if(Input.GetKeyDown(KeyCode.Escape)){
-            Debug.Log("excape clicked");
+            Debug.Log("escape clicked");
             if(GameIsPaused){
                 Resume();
             }else{
@@ -43,13 +43,21 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
     public void Quit(){
-    	string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
-    	HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
-    	HeartHealthVisual.heartHealthSystemStatic.Heal(20);
-    	Debug.Log("Quit clicked");
-        File.WriteAllText(path,"5");
-        SceneManager.LoadScene("StartingMenu");
-        Time.timeScale =1f;
-        GameIsPaused = false;
+        bool editionMode = true;
+        if (editionMode)
+        {
+            string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
+            HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
+            HeartHealthVisual.heartHealthSystemStatic.Heal(20);
+            Debug.Log("Quit clicked");
+            File.WriteAllText(path,"5");
+            SceneManager.LoadScene("StartingMenu");
+            Time.timeScale =1f;
+            GameIsPaused = false;
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 }
