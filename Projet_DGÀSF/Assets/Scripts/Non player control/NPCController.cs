@@ -9,8 +9,8 @@ public class NPCController : MonoBehaviour
     public Object m_JsonFile;
     public int m_Heal;
     public int m_Damage;
-    private bool m_HealUsed = false;
-    private bool m_DamageUsed = false;
+    //private bool m_HealUsed = false;
+    //private bool m_DamageUsed = false;
 
     public GameObject m_InvisibleObject;
 
@@ -20,6 +20,7 @@ public class NPCController : MonoBehaviour
     private bool m_Interacting = false;
     private bool m_StartDialog = false;
     private bool m_EndDialog = false;
+    private bool m_End = false;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,11 @@ public class NPCController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if  (m_End)
+        {
+            return;
+        }
+
         if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog)
         {
             m_Interacting = true;
@@ -52,15 +58,12 @@ public class NPCController : MonoBehaviour
             m_StartDialog = true;
         }
 
-        if (m_Heal != null && m_HealUsed == false) //Enlever ou ajouter des vies
-		{
-			HeartHealthVisual.heartHealthSystemStatic.Heal(4*m_Heal);
-            m_HealUsed = true;
-		}
-        if (m_Damage != null && m_DamageUsed == false)
+        if (m_EndDialog)
         {
-            HeartHealthVisual.heartHealthSystemStatic.Damage(4*m_Damage);
-            m_DamageUsed = true;
+            HeartHealthVisual.heartHealthSystemStatic.Heal(m_Heal);
+            HeartHealthVisual.heartHealthSystemStatic.Damage(m_Damage);
+
+            m_End = true;
         }
     }
 

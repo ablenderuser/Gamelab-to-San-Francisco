@@ -24,14 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstLevel/FirstLevelFibro/FirstLevelFibro.unity
     guid: e688399b8715a0b47ae99f4c9df6c87c
   - enabled: 1
-    path: Assets/Scenes/FirstLevel/FirstLevelEndAutiste.unity
+    path: Assets/Scenes/FirstLevel/FirstLevelAutiste/FirstLevelEndAutiste.unity
     guid: 3c2a38675bd877445a1538986f3b193b
   - enabled: 1
-    path: Assets/Scenes/FirstLevel/FirstLevelEndBipolaire.unity
+    path: Assets/Scenes/FirstLevel/FirstLevelBipolaire/FirstLevelEndBipolaire.unity
     guid: db114e1c418fedfa1bdeeea589f75983
   - enabled: 1
-    path: Assets/Scenes/FirstLevel/FirstLevelEndFibro.unity
-    guid: ec8ed19d1a5bb518e9741fca7648b0f3
+    path: Assets/Scenes/FirstLevel/FirstLevelFibro/FirstLevelEndFibro.unity
+    guid: 77f77894371dac247a99fef3897aa215
   - enabled: 1
     path: Assets/Scenes/SecondLevel/SecondLevelAutiste.unity
     guid: 56a045ebc37c3797dad699386543802c

@@ -7,6 +7,7 @@ using System.IO;
 public class HeartHealthVisual : MonoBehaviour
 {
     public static HeartHealthSystem heartHealthSystemStatic;
+    public int m_initHealth;
     [SerializeField] private Sprite heart0Sprite;
     [SerializeField] private Sprite heart1Sprite;
     [SerializeField] private Sprite heart2Sprite;
@@ -41,6 +42,8 @@ public class HeartHealthVisual : MonoBehaviour
 
         List<HeartHealthSystem.Heart> heartList = heartHealthSystem.GetHeartList();
         Vector2 heartAnchoredPosition = new Vector2(-350, 100);
+
+        Debug.Log(heartList);
 
         for (int i = 0; i < heartList.Count; i++)
         {

@@ -10,13 +10,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
 
     void Update(){
-        
-        
         if(Input.GetKeyDown(KeyCode.Escape)){
-            Debug.Log("escape clicked");
-            if(GameIsPaused){
+            //Debug.Log("escape clicked");
+            if(GameIsPaused)
+            {
                 Resume();
-            }else{
+            }
+            else
+            {
                 Pause();
             }
         }
@@ -35,7 +36,7 @@ public class PauseMenu : MonoBehaviour
     public void Menu(){
     	string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
         File.WriteAllText(path,"5");
-        Debug.Log("launchStartMenu");
+        //Debug.Log("launchStartMenu");
         HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
         HeartHealthVisual.heartHealthSystemStatic.Heal(20);
         SceneManager.LoadScene("StartingMenu");
@@ -49,7 +50,7 @@ public class PauseMenu : MonoBehaviour
             string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
             HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
             HeartHealthVisual.heartHealthSystemStatic.Heal(20);
-            Debug.Log("Quit clicked");
+            //Debug.Log("Quit clicked");
             File.WriteAllText(path,"5");
             SceneManager.LoadScene("StartingMenu");
             Time.timeScale =1f;
