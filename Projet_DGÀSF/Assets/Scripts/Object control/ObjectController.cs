@@ -78,7 +78,7 @@ public class ObjectController : MonoBehaviour
 
         if (m_Movable)
         {
-            GetComponent<Rigidbody2D>().mass = 0.005f;
+            GetComponent<Rigidbody2D>().mass = 0.0001f;
         }
 
         if (m_ToCollectObject)

@@ -269,7 +269,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 419877512, guid: 399b9b56f125e654aaad9b78ec305fdf, type: 3}
       propertyPath: SceneACharger
-      value: SecondLevelBipolaire
+      value: SecondLevelBipolairee
       objectReference: {fileID: 0}
     - target: {fileID: 2099766676, guid: 399b9b56f125e654aaad9b78ec305fdf, type: 3}
       propertyPath: m_FontData.m_FontSize

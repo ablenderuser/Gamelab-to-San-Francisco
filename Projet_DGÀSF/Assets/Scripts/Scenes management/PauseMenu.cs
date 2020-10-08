@@ -40,11 +40,12 @@ public class PauseMenu : MonoBehaviour
         HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
         HeartHealthVisual.heartHealthSystemStatic.Heal(20);
         SceneManager.LoadScene("StartingMenu");
+        Debug.Log("StartingMenu launched");
         Time.timeScale =1f;
         GameIsPaused = false;
     }
     public void Quit(){
-        bool editionMode = true;
+        bool editionMode = false;
         if (editionMode)
         {
             string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";

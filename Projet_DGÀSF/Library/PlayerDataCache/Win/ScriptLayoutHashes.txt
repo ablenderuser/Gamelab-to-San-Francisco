@@ -14,6 +14,8 @@ Assets/Scenes/FirstLevel/FirstLevelFibro/FirstLevelEndFibro.unity
 Assets/Scenes/SecondLevel/SecondLevelAutiste.unity
 Assets/Scenes/SecondLevel/SecondLevelBipolaire.unity
 Assets/Scenes/SecondLevel/SecondLevelFibro.unity
+Assets/Scenes/MoreAbout.unity
+Assets/Scenes/Options.unity
 SceneListEnd?
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 77c21079ace8d76ce6e941d3dabbfe6e Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -133,13 +135,13 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 7e1e0193a4d5c273ffb44419f740b45d Assembly-CSharp.dll:.ChangeurDeScene
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.HeartHealthSystem
-e37429be13489b892e5d6e9c60ce93c6 Assembly-CSharp.dll:.launcherKeydown
+3edbf8b3365725bac78a9396586426ab Assembly-CSharp.dll:.launcherKeydown
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CollisionHandling
 b1e5552ab9e3ff7fee2a0d75c8b43483 Assembly-CSharp.dll:.PlayerController
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Inventory
+2352dfd6fb1c142e51d4ad9c121e5386 Assembly-CSharp.dll:.Inventory
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -176,6 +178,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 f091e2cf65df4349affe7f87353da856 Assembly-CSharp.dll:.CameraShift
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+b320e98e13edfe3cc58904ec39e0515a Assembly-CSharp.dll:.Scroll
 76184be691846b3a3f2fc001b0349ab8 Assembly-CSharp.dll:.SceneChangerObjectControl
 df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient

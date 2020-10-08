@@ -1,18 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public List<Item> characterItems;
+    public GameObject m_InventoryDisplay;
+
     private ItemDatabase itemDatabase;
 	
 	public void Start()
 	{
         characterItems = new List<Item>();
         itemDatabase = new ItemDatabase();
-        InInventory("Clé");
+        //InInventory("Clé");
 	}
+
+    public void Update()
+    {
+        if (m_InventoryDisplay != null)
+        {
+            if (InInventory("Clé"))
+            {
+                m_InventoryDisplay.SetActive(true);
+            }
+            else
+            {
+                m_InventoryDisplay.SetActive(false);
+            }
+        }
+    }
 
     public void GiveItem(string title)
     {
