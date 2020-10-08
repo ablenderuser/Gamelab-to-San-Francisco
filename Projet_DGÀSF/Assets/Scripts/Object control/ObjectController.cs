@@ -40,7 +40,7 @@ public class ObjectController : MonoBehaviour
         float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
             if (d > 50)
             {
-                Debug.Log("Clef rendue visible 1");
+                //Debug.Log("Clef rendue visible 1");
                 m_InvisibleObject.SetActive(true);
             }
         }
@@ -98,7 +98,7 @@ public class ObjectController : MonoBehaviour
 
             if (m_InvisibleObject != null && m_Movable == false)
             {
-                Debug.Log("Clef rendue visible 2");
+                //Debug.Log("Clef rendue visible 2");
                 m_InvisibleObject.SetActive(true);
             }
             

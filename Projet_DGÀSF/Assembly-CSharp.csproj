@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\UI\buttons.cs" />
     <Compile Include="Assets\Scripts\UI\HeartHealthSystem.cs" />
     <Compile Include="Assets\Scripts\UI\HeartHealthVisual.cs" />
+    <Compile Include="Assets\Scroll.cs" />
     <None Include="Assets\Scripts\UI\numberOfHearts.txt" />
     <None Include="Assets\Scenes\numberOfHearts.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

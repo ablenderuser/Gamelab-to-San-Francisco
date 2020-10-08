@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/FirstLevel/FirstLevelFibro/FirstLevelFibro.unity
+- path: Assets/Scenes/FirstLevel/FirstLevelAutiste/FirstLevelAutiste.unity
   isLoaded: 1
   isActive: 1

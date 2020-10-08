@@ -782,7 +782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Description: "Un canap\xE9 tr\xE8s lourd. Il serait plus joli pr\xE8s des plantes
     !"
-  m_Action: "D\xE9placer"
+  m_Action: DEPLACER
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 1
@@ -1152,6 +1152,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3597261120990933101, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_Text
+      value: QUITTER
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261120990933101, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261120990933101, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3597261121016449098, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
       propertyPath: m_Name
@@ -1200,7 +1215,7 @@ PrefabInstance:
     - target: {fileID: 3597261121016449102, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3597261121016449102, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
@@ -1266,6 +1281,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261121402297716, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_Text
+      value: MENU
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261121402297716, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261121773323879, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261122284394796, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_Text
+      value: REPRENDRE
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261122284394796, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3597261122284394796, guid: 4b4760607c84eb648857904d6dc05487,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 115
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4760607c84eb648857904d6dc05487, type: 3}
@@ -1345,7 +1390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548.7, y: 268.5, z: -45}
+  m_LocalPosition: {x: 548.9, y: 305.6, z: -45}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 122633556}
@@ -1584,7 +1629,7 @@ Transform:
   m_LocalScale: {x: 47.852848, y: 21.1603, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &843680923
 PrefabInstance:
@@ -2023,7 +2068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Description: Chat endormi
-  m_Action: Caresser
+  m_Action: CARESSER
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
@@ -2683,7 +2728,7 @@ PrefabInstance:
     - target: {fileID: 8248869711257570832, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
       propertyPath: m_Text
-      value: Ouvrons-la !
+      value: OUVRIR
       objectReference: {fileID: 0}
     - target: {fileID: 8248869711257570832, guid: 574633e8ac5cccaca9c075e13feb5802,
         type: 3}
@@ -2764,7 +2809,7 @@ Transform:
   - {fileID: 1387158999}
   - {fileID: 1721179710}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1217875738
 GameObject:
@@ -2891,7 +2936,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1309235333
 PrefabInstance:
@@ -2938,7 +2983,7 @@ PrefabInstance:
     - target: {fileID: 7678406169868129883, guid: aee9dc919b044b549a9bdfabafa7ee8d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7678406169868129883, guid: aee9dc919b044b549a9bdfabafa7ee8d,
         type: 3}
@@ -3418,7 +3463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Description: "Cl\xE9"
-  m_Action: Ramasser
+  m_Action: RAMASSER
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
@@ -5677,6 +5722,11 @@ PrefabInstance:
       propertyPath: m_InvisibleObject
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7066957355119627340, guid: 5aee448b3b5f56e4eaac3237e320fef3,
+        type: 3}
+      propertyPath: m_Action
+      value: RANGER
+      objectReference: {fileID: 0}
     - target: {fileID: 7066957355119627341, guid: 5aee448b3b5f56e4eaac3237e320fef3,
         type: 3}
       propertyPath: m_HealOrDamage
@@ -6302,7 +6352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Description: "Livres en d\xE9sordre"
-  m_Action: Ranger
+  m_Action: RANGER
   m_CoAnimatedObject: {fileID: 0}
   m_InvisibleObject: {fileID: 0}
   m_Movable: 0
@@ -6444,7 +6494,7 @@ Transform:
   m_Children:
   - {fileID: 1875762361}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2103269184 stripped
 Transform:

@@ -10,22 +10,24 @@ public class launcherKeydown : MonoBehaviour
     public string NextScene;
     public GameObject m_StartButton;
     public GameObject m_CreditsButton;
+    public GameObject m_MoreAboutButton;
+    public GameObject m_OptionsButton;
 
     private GameObject m_Image;
 
     public void Start()
     {
         m_Image = GameObject.Find("Image");
-        //m_StartButton = GameObject.Find("Start");
-        //m_CreditsButton = GameObject.Find("Credits");
     }
 
     public void Update(){
         if(Input.anyKeyDown){
             m_Image.GetComponent<Animator>().SetBool("Up", true);
-            //m_Image.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+
             m_StartButton.SetActive(true);
             m_CreditsButton.SetActive(true);
+            m_MoreAboutButton.SetActive(true);
+            m_OptionsButton.SetActive(true);
         }
     }
 }
