@@ -15,7 +15,7 @@
 "m_Choices":["", "Quoi ?", ""],
 "m_NextSentences":[{}, {
 
-"m_Sentence":"En parlant de sortir, j'ai perdu la clef",
+"m_Sentence":"En parlant de sortir, j'ai perdu la clé...",
 "m_Choices":[],
 "m_NextSentences":[]
 

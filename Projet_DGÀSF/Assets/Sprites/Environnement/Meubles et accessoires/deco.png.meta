@@ -15,6 +15,7 @@ TextureImporter:
     21300020: deco_10
     21300022: deco_11
     21300024: deco_12
+    21300026: deco_13
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -100,12 +101,12 @@ TextureImporter:
       name: deco_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 523
-        width: 53
-        height: 50
+        x: 71
+        y: 525
+        width: 49
+        height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,12 +121,12 @@ TextureImporter:
       name: deco_1
       rect:
         serializedVersion: 2
-        x: 143
-        y: 518
-        width: 31
-        height: 37
+        x: 144
+        y: 520
+        width: 28
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +141,12 @@ TextureImporter:
       name: deco_2
       rect:
         serializedVersion: 2
-        x: 198
+        x: 197
         y: 516
-        width: 37
+        width: 38
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +161,12 @@ TextureImporter:
       name: deco_3
       rect:
         serializedVersion: 2
-        x: 249
-        y: 517
-        width: 40
-        height: 43
+        x: 251
+        y: 519
+        width: 36
+        height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,12 +181,12 @@ TextureImporter:
       name: deco_4
       rect:
         serializedVersion: 2
-        x: 304
-        y: 515
-        width: 29
-        height: 45
+        x: 306
+        y: 517
+        width: 24
+        height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,12 +201,12 @@ TextureImporter:
       name: deco_5
       rect:
         serializedVersion: 2
-        x: 94
-        y: 473
-        width: 50
-        height: 39
+        x: 96
+        y: 475
+        width: 46
+        height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,12 +221,12 @@ TextureImporter:
       name: deco_6
       rect:
         serializedVersion: 2
-        x: 143
-        y: 419
-        width: 24
-        height: 26
+        x: 145
+        y: 421
+        width: 20
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -240,12 +241,12 @@ TextureImporter:
       name: deco_7
       rect:
         serializedVersion: 2
-        x: 178
-        y: 414
-        width: 20
-        height: 27
+        x: 180
+        y: 416
+        width: 16
+        height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +261,12 @@ TextureImporter:
       name: deco_8
       rect:
         serializedVersion: 2
-        x: 252
-        y: 429
-        width: 18
-        height: 33
+        x: 254
+        y: 431
+        width: 14
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +281,12 @@ TextureImporter:
       name: deco_9
       rect:
         serializedVersion: 2
-        x: 114
-        y: 385
-        width: 42
-        height: 29
+        x: 116
+        y: 387
+        width: 38
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +301,12 @@ TextureImporter:
       name: deco_10
       rect:
         serializedVersion: 2
-        x: 180
-        y: 350
-        width: 35
-        height: 35
+        x: 182
+        y: 352
+        width: 31
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,12 +321,12 @@ TextureImporter:
       name: deco_11
       rect:
         serializedVersion: 2
-        x: 277
+        x: 278
         y: 262
-        width: 205
+        width: 203
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,10 +341,30 @@ TextureImporter:
       name: deco_12
       rect:
         serializedVersion: 2
-        x: 133
-        y: 288
-        width: 42
-        height: 62
+        x: 135
+        y: 290
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5843659bfbdba56b72798aa1b74402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: deco_13
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 432
+        width: 15
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,7 +372,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f5843659bfbdba56b72798aa1b74402
+      spriteID: 8df81d956ea25844eaa1bbe119454dfb
       vertices: []
       indices: 
       edges: []

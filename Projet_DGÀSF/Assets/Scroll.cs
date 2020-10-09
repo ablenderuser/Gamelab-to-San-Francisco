@@ -7,13 +7,20 @@ public class Scroll : MonoBehaviour
 {
     public Text m_Explanations;
     private string[] m_Text = { "Bienvenue dans la galaxie des cuillères, dont VOUS êtes le héros !" +
-                                "\nUn monde où les choses fonctionnent quelque peu différemment… ",
-                                "Ici, chacune de vos actions aura des conséquences, même la plus anodine…" +
-                                "\nCe qui est considéré comme un handicap dans votre monde, ici, est devenu la norme." +
-                                "\nPar conséquent, l’énergie, appelée cuillère, n’a pas la même valeur et s’épuise beaucoup plus vite vous forçant à faire des choix drastiques. ",
-                                "Pas de mages, de guerriers ou de soigneurs mais des autistes, des bipolaires et des fibromyalgiques…" +
-                                "\nPas de cœurs, d’énergie ou de mana, ici ce sont les cuillères qui font la loi." +
-                                "\nUne loi qui limite vos cuillères à un nombre donné dans la journée." +
+                                "\nUn monde où les choses fonctionnent quelque peu différemment…",
+                                "Ici, chacune de vos actions aura des conséquences," +
+                                "\nmême la plus anodine…" +
+                                "\nCe qui est considéré comme un handicap dans votre monde," +
+                                "\nici, est devenu la norme." +
+                                "\n\nPar conséquent, l’énergie, appelée cuillère," +
+                                "\nn’a pas la même valeur et s’épuise beaucoup plus vite," +
+                                "vous forçant à faire des choix drastiques.",
+                                "Pas de mages, de guerriers ou de soigneurs," +
+                                "\nmais des autistes, des bipolaires et des fibromyalgiques…" +
+                                "\nPas de cœurs, d’énergie ou de mana," +
+                                "\nici ce sont les cuillères qui font la loi." +
+                                "\n\nUne loi qui limite vos cuillères à un nombre " +
+                                "\ndonné dans la journée." +
                                 "\nVous allez en perdre ou en gagner, mais de quelle manière ?" +
                                 "\n\nCela ne dépend que de vous… " };
     private int m_Index = 0;

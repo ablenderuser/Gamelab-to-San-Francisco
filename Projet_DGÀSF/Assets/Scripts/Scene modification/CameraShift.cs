@@ -47,9 +47,9 @@ public class CameraShift : MonoBehaviour
     {
         Debug.Log("Passé");
 
-        Transform m_CameraTransform = GameObject.Find("Main Camera").GetComponent<Transform>();
-        Transform m_SpriteMaskTransform = GameObject.Find("Sprite Mask").GetComponent<Transform>();
-        Transform m_CollidersTransform = GameObject.Find("Shift colliders").GetComponent<Transform>();
+        Transform m_CameraTransform = GameObject.Find("MainCamera").GetComponent<Transform>();
+        Transform m_SpriteMaskTransform = GameObject.Find("CameraSpriteMask").GetComponent<Transform>();
+        Transform m_CollidersTransform = GameObject.Find("CameraShiftColliders").GetComponent<Transform>();
         Debug.Log(m_CollidersTransform.position);
 
         Vector3 m_Shift = new Vector3(m_XShift, m_YShift, 0);

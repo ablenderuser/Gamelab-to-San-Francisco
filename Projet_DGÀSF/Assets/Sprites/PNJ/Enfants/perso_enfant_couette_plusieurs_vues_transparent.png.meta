@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: cab4de30f47a84b8d96c53024426d31b
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: perso_enfant_couette_plusieurs_vues_transparent_0
+    21300002: perso_enfant_couette_plusieurs_vues_transparent_1
+    21300004: perso_enfant_couette_plusieurs_vues_transparent_2
+    21300006: perso_enfant_couette_plusieurs_vues_transparent_3
+    21300008: perso_enfant_couette_plusieurs_vues_transparent_4
+    21300010: perso_enfant_couette_plusieurs_vues_transparent_5
+    21300012: perso_enfant_couette_plusieurs_vues_transparent_6
+    21300014: perso_enfant_couette_plusieurs_vues_transparent_7
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +48,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +77,180 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 387
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab00f1776bc437d4890d086d9c1f6dfa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 387
+        width: 36
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bbbdfb1b0d0f8428de4960b577537e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 387
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996727c2ffb114243aba50e301eb88e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 387
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4461227e23c87eb47a1a1f80120198c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 387
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481f3fdb6e8a7794f97e7704df0b2102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 387
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd38f1b1a29e424bbe4211d2192f502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 387
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb0d250d03bf7d48a72f79e95de48b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: perso_enfant_couette_plusieurs_vues_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 387
+        width: 37
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511a51d1b0dc5a04b950f2116f683b91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
