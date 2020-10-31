@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class Scroll : MonoBehaviour
+public class Scroll1 : MonoBehaviour
 {
     public Text m_Explanations;
     private string[] m_Text = { "Bienvenue dans la galaxie des cuillères, dont VOUS êtes le héros !" +
@@ -14,7 +12,7 @@ public class Scroll : MonoBehaviour
                                 "\nici, est devenu la norme." +
                                 "\n\nPar conséquent, l’énergie, appelée cuillère," +
                                 "\nn’a pas la même valeur et s’épuise beaucoup plus vite," +
-                                "vous forçant à faire des choix drastiques.",
+                                " vous forçant à faire des choix drastiques.",
                                 "Pas de mages, de guerriers ou de soigneurs," +
                                 "\nmais des autistes, des bipolaires et des fibromyalgiques…" +
                                 "\nPas de cœurs, d’énergie ou de mana," +

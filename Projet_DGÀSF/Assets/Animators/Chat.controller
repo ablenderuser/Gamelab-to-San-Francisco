@@ -14,7 +14,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -135,7 +135,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Caress\xE9"
+  m_Name: "Rang\xE9"
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -149,7 +149,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e13ac0cf3e0916c9eb6cc73523447c8a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 22c4b31f25c069447bd4bde1273d1db7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

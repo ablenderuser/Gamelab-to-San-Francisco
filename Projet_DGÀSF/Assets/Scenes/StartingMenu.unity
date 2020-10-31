@@ -2827,7 +2827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc46e462978f9dad8a04f9d94c33a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneACharger: CharacterChoice
+  SceneACharger: BeforeFirstLevel
   compulsoryItem: 
 --- !u!1 &2107538822
 GameObject:

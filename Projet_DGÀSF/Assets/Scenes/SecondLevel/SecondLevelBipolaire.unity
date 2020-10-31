@@ -542,7 +542,7 @@ PrefabInstance:
     - target: {fileID: 3597261120990933101, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 14
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3597261120990933101, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
@@ -552,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 3597261121016449098, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: PauseCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 3597261121016449098, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
@@ -672,7 +672,7 @@ PrefabInstance:
     - target: {fileID: 3597261121402297716, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 14
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3597261121773323879, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
@@ -707,7 +707,7 @@ PrefabInstance:
     - target: {fileID: 3597261122284394796, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 17
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3597261122284394796, guid: 4b4760607c84eb648857904d6dc05487,
         type: 3}
