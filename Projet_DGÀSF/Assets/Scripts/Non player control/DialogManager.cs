@@ -200,6 +200,8 @@ public class DialogManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("No more choices");
+
             m_CanvasFinishDialogButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
             m_FinishDialogButtonUI = GameObject.Find("InteractionButton");
             m_FinishDialogButtonUI.name = "FinishDialogButton";
@@ -211,7 +213,12 @@ public class DialogManager : MonoBehaviour
             m_FinishDialogTextUI.name = "ThirdChoiceText";
             m_FinishDialogText = m_FinishDialogTextUI.GetComponent<Text>();
             m_FinishDialogText.text = "Fin";
-            GetComponent<NPCController>().SetImpossible();
+
+            if (m_OneShot)
+            {
+                Debug.Log("OneShot");
+                GetComponent<NPCController>().SetImpossible();
+            }
         }
     }
 

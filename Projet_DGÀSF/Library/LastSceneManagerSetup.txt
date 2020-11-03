@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/FirstLevel/FirstLevelBipolaire/FirstLevelBipolaire.unity
+- path: Assets/Scenes/SecondLevel/SecondLevelFibro.unity
   isLoaded: 1
   isActive: 1
