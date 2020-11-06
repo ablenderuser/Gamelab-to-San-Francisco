@@ -52,7 +52,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New State
-  m_Speed: 0.04
+  m_Speed: 0.02
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101937951786873942}
