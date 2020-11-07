@@ -135,7 +135,7 @@ public class DialogManager : MonoBehaviour
         if (m_Dialog.m_NextSentences.Length > 0)
         {
             m_Dialog = m_Dialog.m_NextSentences[2];
-            HeartHealthVisual.heartHealthSystemStatic.Heal(4);
+            //HeartHealthVisual.heartHealthSystemStatic.Heal(4);
             ContinueDialog();
         }
         else

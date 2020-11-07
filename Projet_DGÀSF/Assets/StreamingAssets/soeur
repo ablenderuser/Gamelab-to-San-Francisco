@@ -16,7 +16,7 @@
 "m_NextSentences":[{}, {
 
 "m_Sentence":"En parlant de sortir, j'ai perdu la clé...",
-"m_Choices":[],
+"m_Choices":["", "FIN", ""],
 "m_NextSentences":[]
 
 }, {}]
