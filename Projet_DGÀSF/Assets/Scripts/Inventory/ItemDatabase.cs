@@ -9,8 +9,12 @@ public class ItemDatabase
     public ItemDatabase()
     {
         this.items = new List<Item>();
+
         Item clef = new Item(0, "Clé", "Une jolie clé");
         this.items.Add(clef);
+
+        Item bread = new Item(0, "Bout de pain", "");
+        this.items.Add(bread);
     }
 
 	public Item GetItem(string itemName)

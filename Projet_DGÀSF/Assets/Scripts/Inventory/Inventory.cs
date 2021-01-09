@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +18,17 @@ public class Inventory : MonoBehaviour
 
     public void Update()
     {
-        if (m_InventoryDisplay != null)
+        Debug.Log(gameObject.GetComponent<Inventory>().InInventory("Bout de pain"));
+        Debug.Log(characterItems.Count);
+        Debug.Log("Bonjour");
+
+        for (int i = 0; i < characterItems.Count; i++)
+        {
+            Debug.Log(characterItems[i].title);
+            GameObject.Find("InventoryItem").GetComponent<Image>().sprite = characterItems[i].icon;
+        }
+
+        /*if (m_InventoryDisplay != null)
         {
             if (InInventory("Clé"))
             {
@@ -29,7 +38,7 @@ public class Inventory : MonoBehaviour
             {
                 m_InventoryDisplay.SetActive(false);
             }
-        }
+        }*/
     }
 
     public void GiveItem(string title)
@@ -37,7 +46,8 @@ public class Inventory : MonoBehaviour
         Item itemToAdd = itemDatabase.GetItem(title);
         characterItems.Add(itemToAdd);
         //Debug.Log("Added item: " + itemToAdd.title);
-        InInventory(title);
+        //m_InventoryDisplay.GetComponentInChildren<Image>().sprite = itemToAdd.icon;
+        //InInventory(title);
     }
 
     public bool InInventory(string title)

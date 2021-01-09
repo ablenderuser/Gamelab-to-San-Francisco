@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4370339683998067252}
   - component: {fileID: 4370339683998067259}
   - component: {fileID: 4370339683998067258}
-  - component: {fileID: 4370339683998067257}
-  - component: {fileID: 4370339683998067256}
+  - component: {fileID: 7693372782463029506}
+  - component: {fileID: 134082602296755145}
   m_Layer: 0
   m_Name: Non player character
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4370339683998067262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.68, y: 2.46, z: 0}
-  m_LocalScale: {x: 1.7999998, y: 1.8000001, z: 1}
+  m_LocalScale: {x: 0.6000001, y: 0.6000001, z: 1}
   m_Children:
   - {fileID: 7927859428944024427}
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300010, guid: d773e9b7132badb439450f2dc217ef3e, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 4efe4e8d8695856109271d89ccc04a2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!60 &4370339683998067259
 PolygonCollider2D:
@@ -101,7 +101,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.78}
+    oldSize: {x: 0.92, y: 1.45}
     newSize: {x: 0.37, y: 0.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -137,7 +137,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.37, y: 0.78}
+    oldSize: {x: 0.92, y: 1.45}
     newSize: {x: 0.37, y: 0.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -146,20 +146,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3539774, y: 0.7050961}
   m_EdgeRadius: 0
---- !u!114 &4370339683998067257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4370339683998067262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c636d041469ed824f9a1c8e6f83942fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_JsonFile: {fileID: 102900000, guid: d55d572644fb678788fcffed05fb0641, type: 3}
---- !u!114 &4370339683998067256
+--- !u!114 &7693372782463029506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,15 +158,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bf01cd31e2c1c342863eaefb006a270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_OneShot: 1
+  m_OneShot: 0
   m_DialogBoxPrefab: {fileID: 2019085846844355286, guid: 84fde4c401bb22f4d9300edf91dd2927,
     type: 3}
   m_ChoiceButtonPrefab: {fileID: 6530158812088488488, guid: 5fb4f4a9abf12f44d9f9a3df3cbf74b1,
     type: 3}
-  m_Decal1: {x: -70, y: 0, z: 0}
+  m_Decal1: {x: 0, y: 0, z: 0}
   m_Decal2: {x: 0, y: 0, z: 0}
-  m_Decal3: {x: 70, y: 0, z: 0}
+  m_Decal3: {x: 0, y: 0, z: 0}
   m_DecalF: {x: 0, y: 0, z: 0}
+--- !u!114 &134082602296755145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4370339683998067262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c636d041469ed824f9a1c8e6f83942fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JsonFile: {fileID: 0}
+  m_Heal: 0
+  m_Damage: 0
+  m_InvisibleObject: {fileID: 0}
 --- !u!1001 &4370339684880154622
 PrefabInstance:
   m_ObjectHideFlags: 0

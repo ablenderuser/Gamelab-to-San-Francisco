@@ -24,10 +24,10 @@ EditorBuildSettings:
     path: Assets/Scenes/FirstLevel/FirstLevelFibro/FirstLevelFibro.unity
     guid: e688399b8715a0b47ae99f4c9df6c87c
   - enabled: 0
-    path: Assets/Scenes/BeforeFirstLevel/BeforeFirstLevelAutiste.unity
+    path: 
     guid: 3c2a38675bd877445a1538986f3b193b
   - enabled: 0
-    path: Assets/Scenes/BeforeFirstLevel/BeforeFirstLevelBipolaire.unity
+    path: 
     guid: db114e1c418fedfa1bdeeea589f75983
   - enabled: 1
     path: Assets/Scenes/BeforeFirstLevel.unity
@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BeforeSecondLevel/BeforeSecondLevelFibro.unity
     guid: 77317e3d88f8b0047be8a2b1fd729cbd
+  - enabled: 1
+    path: Assets/Scenes/SecondLevel/PapiGame/PapiGameFibro.unity
+    guid: 9654c8f4f58cecb4b9cacd1f2392e150
   m_configObjects: {}
