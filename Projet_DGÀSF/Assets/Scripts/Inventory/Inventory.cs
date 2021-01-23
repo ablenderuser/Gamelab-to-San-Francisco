@@ -5,49 +5,26 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public List<Item> characterItems;
-    public GameObject m_InventoryDisplay;
+    public List<GameObject> m_InventoryDisplay;
 
     private ItemDatabase itemDatabase;
+    private int itemNum;
 	
 	public void Start()
 	{
         characterItems = new List<Item>();
         itemDatabase = new ItemDatabase();
-        //InInventory("Clé");
+        itemNum = 0;
 	}
-
-    public void Update()
-    {
-        Debug.Log(gameObject.GetComponent<Inventory>().InInventory("Bout de pain"));
-        Debug.Log(characterItems.Count);
-        Debug.Log("Bonjour");
-
-        for (int i = 0; i < characterItems.Count; i++)
-        {
-            Debug.Log(characterItems[i].title);
-            GameObject.Find("InventoryItem").GetComponent<Image>().sprite = characterItems[i].icon;
-        }
-
-        /*if (m_InventoryDisplay != null)
-        {
-            if (InInventory("Clé"))
-            {
-                m_InventoryDisplay.SetActive(true);
-            }
-            else
-            {
-                m_InventoryDisplay.SetActive(false);
-            }
-        }*/
-    }
 
     public void GiveItem(string title)
     {
         Item itemToAdd = itemDatabase.GetItem(title);
         characterItems.Add(itemToAdd);
-        //Debug.Log("Added item: " + itemToAdd.title);
-        //m_InventoryDisplay.GetComponentInChildren<Image>().sprite = itemToAdd.icon;
-        //InInventory(title);
+        m_InventoryDisplay[itemNum].GetComponent<Image>();
+        itemNum++;
+
+        Debug.Log("Added item: " + itemToAdd.title);
     }
 
     public bool InInventory(string title)

@@ -23,7 +23,6 @@ public class BreadCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(cpt);
         m_RealTimeCounter += 1;
         if (m_RealTimeCounter == 75)
         {
@@ -34,7 +33,6 @@ public class BreadCounter : MonoBehaviour
                 {
                     GameObject.Find("Player character").GetComponent<Inventory>().GiveItem("Bout de pain");
                 }
-                Debug.Log(GameObject.Find("Player character").GetComponent<Inventory>().InInventory("Bout de pain"));
             }
             else
             {
