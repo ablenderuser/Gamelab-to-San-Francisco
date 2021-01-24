@@ -13,7 +13,7 @@ public class ItemDatabase
         Item clef = new Item(0, "Clé", "Une jolie clé");
         this.items.Add(clef);
 
-        Item bread = new Item(0, "Bout de pain", "");
+        Item bread = new Item(0, "Pain", "Un bon bout de pain");
         this.items.Add(bread);
     }
 

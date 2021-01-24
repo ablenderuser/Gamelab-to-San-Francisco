@@ -29,10 +29,7 @@ public class BreadCounter : MonoBehaviour
             if (m_IntTimeCounter == 1)
             {
                 SceneManager.LoadScene("SecondLevelFibro");
-                for (int i=0; i<cpt; i++)
-                {
-                    GameObject.Find("Player character").GetComponent<Inventory>().GiveItem("Bout de pain");
-                }
+                Memory.Memorize("Clé", cpt);
             }
             else
             {

@@ -15,16 +15,26 @@ public class Inventory : MonoBehaviour
         characterItems = new List<Item>();
         itemDatabase = new ItemDatabase();
         itemNum = 0;
-	}
+
+        /*for(int i=0; i<Memory.itemName.Count; i++)
+        {
+            for (int j=0; j<Memory.itemNum[i]; j++)
+            {
+                GiveItem(Memory.itemName[i]);
+            }
+        }*/
+        for (int j = 0; j < Memory.itemNum; j++)
+        {
+            GiveItem(Memory.itemName);
+        }
+    }
 
     public void GiveItem(string title)
     {
         Item itemToAdd = itemDatabase.GetItem(title);
         characterItems.Add(itemToAdd);
-        m_InventoryDisplay[itemNum].GetComponent<Image>();
+        m_InventoryDisplay[itemNum].GetComponent<Image>().sprite = itemToAdd.icon;
         itemNum++;
-
-        Debug.Log("Added item: " + itemToAdd.title);
     }
 
     public bool InInventory(string title)
@@ -32,10 +42,8 @@ public class Inventory : MonoBehaviour
         Item item = itemDatabase.GetItem(title);
         if (characterItems.Contains(item))
         {
-            //Debug.Log(title + " is in inventory");
             return true;
         }
-        //Debug.Log(title + " is not in inventory");
         return false;
     }
 }
