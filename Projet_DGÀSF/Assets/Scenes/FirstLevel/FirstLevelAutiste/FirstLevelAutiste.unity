@@ -6768,9 +6768,8 @@ PrefabInstance:
     - target: {fileID: 134082602296755145, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_JsonFile
-      value: 
-      objectReference: {fileID: 102900000, guid: d55d572644fb678788fcffed05fb0641,
-        type: 3}
+      value: soeur
+      objectReference: {fileID: 0}
     - target: {fileID: 4370339683998067252, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_SortingOrder

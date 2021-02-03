@@ -6,7 +6,7 @@ using System.IO;
 
 public class NPCController : MonoBehaviour
 {
-    public Object m_JsonFile;
+    public string m_JsonFile;
     public int m_Heal;
     public int m_Damage;
     //private bool m_HealUsed = false;
@@ -25,8 +25,15 @@ public class NPCController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string jsonString = File.ReadAllText(Application.streamingAssetsPath + "/" + m_JsonFile.name);
-        m_Dialog = CreateFromJSON(jsonString);
+        // Debug.Log("StreamingAssets PATH : " + Application.streamingAssetsPath);
+        // Debug.Log("JSON file name : " + m_JsonFile);
+        if (m_JsonFile != null)
+        {
+            string path = Path.Combine(Application.streamingAssetsPath, m_JsonFile);
+            // Debug.Log("JSON PATH : " + path);
+            string jsonString = File.ReadAllText(path);
+            m_Dialog = CreateFromJSON(jsonString);
+        }
     }
 
     public void SetEndDialog()
@@ -47,7 +54,7 @@ public class NPCController : MonoBehaviour
             return;
         }
 
-        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog)
+        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog && m_JsonFile != null)
         {
             m_Interacting = true;
             GetComponent<DialogManager>().StartDialog(m_Dialog);
