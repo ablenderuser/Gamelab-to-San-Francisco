@@ -8,7 +8,10 @@ using UnityEngine;
 public class Dialog
 {
     [TextArea(1, 5)] // better input field in Unity Inspector
+
+    public string m_PNJMood;
     public string m_Sentence;
+    public string m_PlayerMood;
     public string[] m_Choices;
     public Dialog[] m_NextSentences;
 

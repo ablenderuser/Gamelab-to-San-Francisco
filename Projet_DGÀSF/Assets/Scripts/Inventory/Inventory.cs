@@ -34,6 +34,7 @@ public class Inventory : MonoBehaviour
         Item itemToAdd = itemDatabase.GetItem(title);
         characterItems.Add(itemToAdd);
         m_InventoryDisplay[itemNum].GetComponent<Image>().sprite = itemToAdd.icon;
+        m_InventoryDisplay[itemNum].GetComponent<Image>().color = new Color(255,255,255);
         itemNum++;
     }
 

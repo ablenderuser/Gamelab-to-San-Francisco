@@ -58,10 +58,6 @@ public class NPCController : MonoBehaviour
         {
             m_Interacting = true;
             GetComponent<DialogManager>().StartDialog(m_Dialog);
-            if (m_InvisibleObject != null)
-            {
-                m_InvisibleObject.SetActive(true); //Afficher l'objet invisible
-            }
             m_StartDialog = true;
         }
 
@@ -71,6 +67,10 @@ public class NPCController : MonoBehaviour
             HeartHealthVisual.heartHealthSystemStatic.Damage(m_Damage);
 
             m_End = true;
+            if (m_InvisibleObject != null)
+            {
+                m_InvisibleObject.SetActive(true); //Afficher l'objet invisible
+            }
         }
     }
 

@@ -35,9 +35,9 @@ public class ObjectController : MonoBehaviour
 
     void Update()
     {
-        if (m_InvisibleObject != null && m_Movable == true)
+        if (m_InvisibleObject != null && m_Movable)
         {
-        float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
+            float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
             if (d > 50)
             {
                 //Debug.Log("Clef rendue visible 1");
@@ -70,9 +70,8 @@ public class ObjectController : MonoBehaviour
             m_CoAnimator.SetBool(m_Action, true);
         }
 
-        if (gameObject.tag == "linge")
+        if (gameObject.tag == "Linge")
         {
-            myScriptsRigidbody2D.isKinematic = true;
             Object.Destroy(gameObject);
         }
 
@@ -90,13 +89,16 @@ public class ObjectController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction)
+        // Pour éviter que les colliders des autres décors posent problème
+        bool decorCollider = (collision.tag == "DecorCollider");
+        if (!decorCollider) decorCollider = (collision.tag == "Linge");
+
+        if (m_Possible && !decorCollider && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction)
         {
             m_Interacting = true;
             GetComponent<ActionManager>().PrintDescription(m_Description, m_Action);
             
-
-            if (m_InvisibleObject != null && m_Movable == false)
+            if (m_InvisibleObject != null && !m_Movable)
             {
                 //Debug.Log("Clef rendue visible 2");
                 m_InvisibleObject.SetActive(true);

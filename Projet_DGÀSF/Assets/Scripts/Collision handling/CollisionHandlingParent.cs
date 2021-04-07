@@ -24,11 +24,14 @@ public class CollisionHandlingParent : MonoBehaviour
         //Debug.Log(INzone);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
+        // Pour éviter que les colliders des autres décors posent problème
+        bool decorCollider = (collision.tag == "DecorCollider");
+        if (!decorCollider) decorCollider = (collision.tag == "Linge");
+
         //Debug.Log("Entré");
-        if (!INzone)
-        {
+        if (!INzone && !decorCollider) {
             INzone = true;
             sprite.sortingOrder = 5;
             Vector3 newPosition = transform.parent.position;
@@ -40,10 +43,10 @@ public class CollisionHandlingParent : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Debug.Log("Sorti");
-        sprite.sortingOrder = 3;
+        sprite.sortingOrder = 1;
         Vector3 newPosition = transform.parent.position;
         newPosition.z = transform.parent.position.z - 0.5f;
         transform.parent.position = newPosition;
-        INzone =false;
+        INzone = false;
     }
 }
