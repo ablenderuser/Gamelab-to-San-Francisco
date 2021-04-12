@@ -965,7 +965,7 @@ MonoBehaviour:
     type: 3}
   m_TypingSpeed: 0.02
   m_ActionSprite: {fileID: 21300000, guid: da37227a40e776c43a26eb24b0d7e15a, type: 3}
-  m_Decal: {x: 0, y: -62, z: 0}
+  m_Decal: {x: 0, y: -61, z: 0}
 --- !u!114 &415665481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,7 +2258,7 @@ MonoBehaviour:
     type: 3}
   m_TypingSpeed: 0.02
   m_ActionSprite: {fileID: 21300000, guid: ae62b6797bee766d88be540c1a99c235, type: 3}
-  m_Decal: {x: 0, y: -62, z: 0}
+  m_Decal: {x: 0, y: -61, z: 0}
 --- !u!114 &1013765849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5665,7 +5665,7 @@ PrefabInstance:
     - target: {fileID: 7066957355119627341, guid: 5aee448b3b5f56e4eaac3237e320fef3,
         type: 3}
       propertyPath: m_Decal.y
-      value: -62
+      value: -61
       objectReference: {fileID: 0}
     - target: {fileID: 7066957355119627341, guid: 5aee448b3b5f56e4eaac3237e320fef3,
         type: 3}
@@ -6138,7 +6138,7 @@ PrefabInstance:
     - target: {fileID: 134082602296755145, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_JsonFile
-      value: soeur
+      value: soeur.json
       objectReference: {fileID: 0}
     - target: {fileID: 4370339683998067252, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
@@ -6336,7 +6336,7 @@ PrefabInstance:
     - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_Decal2.y
-      value: -62
+      value: -61
       objectReference: {fileID: 0}
     - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
@@ -6346,12 +6346,27 @@ PrefabInstance:
     - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_DecalF.y
-      value: -62
+      value: -61
       objectReference: {fileID: 0}
     - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
       propertyPath: m_TypingSpeed
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
+        type: 3}
+      propertyPath: m_Decal4.y
+      value: -61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
+        type: 3}
+      propertyPath: m_Decal3.x
+      value: 291
+      objectReference: {fileID: 0}
+    - target: {fileID: 7693372782463029506, guid: e55de807aff234a42b651f7de98a51c7,
+        type: 3}
+      propertyPath: m_Decal4.x
+      value: 291
       objectReference: {fileID: 0}
     - target: {fileID: 7927859428944024424, guid: e55de807aff234a42b651f7de98a51c7,
         type: 3}
@@ -6513,7 +6528,7 @@ MonoBehaviour:
     type: 3}
   m_TypingSpeed: 0.02
   m_ActionSprite: {fileID: 21300006, guid: 13934ac6bdf98394a9a5ab82952e66c8, type: 3}
-  m_Decal: {x: 0, y: -62, z: 0}
+  m_Decal: {x: 0, y: -61, z: 0}
 --- !u!114 &1906688762
 MonoBehaviour:
   m_ObjectHideFlags: 0
