@@ -54,9 +54,10 @@ public class NPCController : MonoBehaviour
             return;
         }
 
-        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog && m_JsonFile != null)
+        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog && m_JsonFile != null && !GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting())
         {
             m_Interacting = true;
+            GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(true);
             GetComponent<DialogManager>().StartDialog(m_Dialog);
             m_StartDialog = true;
         }
@@ -82,6 +83,7 @@ public class NPCController : MonoBehaviour
             m_StartDialog = false;
             m_Interacting = false;
             m_EndDialog = false;
+            GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(false);
         }
     }
 }

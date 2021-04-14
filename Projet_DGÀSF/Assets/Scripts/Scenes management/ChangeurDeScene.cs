@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -32,7 +33,8 @@ public class ChangeurDeScene : MonoBehaviour
             }
             else
             {
-                GameObject.Find("SceneChangerObjectDialogText").GetComponent<Text>().text = "Je crois qu'il te faut une clef...";
+                GameObject.Find("SceneChangerObjectDialogText").GetComponent<TypingText>().ChangeSentence("Je crois qu'il te faut une clef...");
+                StartCoroutine(GameObject.Find("SceneChangerObjectDialogText").GetComponent<TypingText>().Type());
             }
         }
         else

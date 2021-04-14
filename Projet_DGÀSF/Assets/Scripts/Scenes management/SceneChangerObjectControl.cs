@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 //using static Dialog;
@@ -35,12 +36,6 @@ public class SceneChangerObjectControl : MonoBehaviour
     {
 		//myCanvas.enabled = false;
 		myCanvas.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 	
 	// Gestion collision et interaction avec le héros
@@ -84,13 +79,10 @@ public class SceneChangerObjectControl : MonoBehaviour
 			m_ActionText = m_ActionTextUI.GetComponent<Text>();
 			m_ActionText.text = m_Action;
 			*/
-
-            //Debug.Log("TriggerStay2D_8");
 			myCanvas.SetActive(true);
-			//Debug.Log("TriggerStay2D_9");
+            StartCoroutine(GameObject.Find("SceneChangerObjectDialogText").GetComponent<TypingText>().Type());			
 			
 			m_StartInteraction = true;
-			
         }
     }
 
@@ -99,7 +91,7 @@ public class SceneChangerObjectControl : MonoBehaviour
         if (m_Possible && m_Interacting)
         {
             //GetComponent<ActionManager>().HideDescription();
-            GameObject.Find("SceneChangerObjectDialogText").GetComponent<Text>().text = "Oh ! Une porte fermée à clef !";
+            GameObject.Find("SceneChangerObjectDialogText").GetComponent<TypingText>().ChangeSentence("Oh ! Une porte fermée à clef !");
             myCanvas.SetActive(false);
 
             m_StartInteraction = false;

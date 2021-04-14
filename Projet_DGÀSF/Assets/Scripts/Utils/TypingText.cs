@@ -3,8 +3,25 @@ using TMPro;
 using System;
 using System.Collections;
 
-public class TypingText
+public class TypingText : MonoBehaviour
 {
+    public TextMeshProUGUI m_TextDisplay;
+    public string m_Sentence;
+    public float m_TypingSpeed;
+    public GameObject m_Button;
+
+    public void ChangeSentence(string sentence)
+    {
+        m_Button.SetActive(false);
+        m_Sentence = sentence;
+    }
+
+    // Surcharge pour l'appel depuis le changeur de scène
+    public IEnumerator Type()
+    {
+        return Type(m_TextDisplay, m_Sentence, m_TypingSpeed, m_Button, null);
+    }
+
     // Surcharge pour le bouton suivant
     public static IEnumerator Type(TextMeshProUGUI textDisplay, string sentence, float typingSpeed, GameObject nextButton)
     {

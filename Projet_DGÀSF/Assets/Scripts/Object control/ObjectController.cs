@@ -93,9 +93,10 @@ public class ObjectController : MonoBehaviour
         bool decorCollider = (collision.tag == "DecorCollider");
         if (!decorCollider) decorCollider = (collision.tag == "Linge");
 
-        if (m_Possible && !decorCollider && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction)
+        if (m_Possible && !decorCollider && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction && !GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting())
         {
             m_Interacting = true;
+            GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(true);
             GetComponent<ActionManager>().PrintDescription(m_Description, m_Action);
             
             if (m_InvisibleObject != null && !m_Movable)
@@ -116,6 +117,7 @@ public class ObjectController : MonoBehaviour
             m_StartInteraction = false;
             m_Interacting = false;
             m_EndInteraction = false;
+            GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(false);
         }
     }
 }
