@@ -7,12 +7,15 @@ public class PlayerController : MonoBehaviour
     public float speed; 
     private Rigidbody2D rb2d;
     private bool facingRight;
+
+    private bool m_Interacting;
     public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D> ();
+        m_Interacting = false;
     }
 
     // FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here. 
@@ -71,6 +74,16 @@ public class PlayerController : MonoBehaviour
         Vector3 s = transform.localScale;
         s.x *= -1;
         transform.localScale = s;
-     }
+    }
+
+    public void SetInteracting(bool interact)
+    {
+        m_Interacting = interact;
+    }
+
+    public bool IsInteracting()
+    {
+        return m_Interacting;
+    }
 
 }

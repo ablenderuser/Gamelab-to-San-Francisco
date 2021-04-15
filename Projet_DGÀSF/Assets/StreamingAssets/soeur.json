@@ -1,0 +1,67 @@
+{
+    "m_PNJMood":"Normal",
+    "m_Sentence":"Salut, bien dormi ?",
+    "m_PlayerMood":"Normal",
+    "m_Choices":["Oui","Non", "Je ne sais pas...", "Bof..."],
+    "m_NextSentences":[{
+        "m_PNJMood":"Normal",
+        "m_Sentence":"Cool ! Bonne journée alors !",
+        "m_PlayerMood":"Normal",
+        "m_Choices":["Bonne journée !", "Ouai salut !"],
+        "m_NextSentences":[]
+    },{
+        "m_PNJMood":"Normal",
+        "m_Sentence":"Bah alors qu'est ce qui t'arrives ?",
+        "m_PlayerMood":"Sad",
+        "m_Choices":["J'ai fait un cauchemar"],
+        "m_NextSentences":[{
+            "m_PNJMood":"Normal",
+            "m_Sentence":"Ah oui, lequel ?",
+            "m_PlayerMood":"Sad",
+            "m_Choices":["J'ai rêvé que je pouvais pas sortir de la maison"],
+            "m_NextSentences":[{
+                "m_PNJMood":"Embarassed",
+                "m_Sentence":"Ah oui, justement…",
+                "m_PlayerMood":"Sad",
+                "m_Choices":["Quoi ?"],
+                "m_NextSentences":[{
+                    "m_PNJMood":"Embarassed",
+                    "m_Sentence":"En parlant de sortir, j'ai perdu la clé...",
+                    "m_PlayerMood":"Angry",
+                    "m_Choices":["Mais nonnn ! Tu abuses..."],
+                    "m_NextSentences":[]
+                }]
+            }]
+        }]
+    }, {
+        "m_PNJMood":"Normal",
+        "m_Sentence":"Bah pourquoi ?",
+        "m_PlayerMood":"Sad",
+        "m_Choices":["Je suis encore fatigué...","Je me suis beaucoup réveillé"],
+        "m_NextSentences":[]
+    },{
+        "m_PNJMood":"Normal",
+        "m_Sentence":"Bah alors qu'est ce qui t'arrives ?",
+        "m_PlayerMood":"Sad",
+        "m_Choices":["J'ai fait un cauchemar"],
+        "m_NextSentences":[{
+            "m_PNJMood":"Normal",
+            "m_Sentence":"Ah oui, lequel ?",
+            "m_PlayerMood":"Sad",
+            "m_Choices":["J'ai rêvé que je pouvais pas sortir de la maison"],
+            "m_NextSentences":[{
+                "m_PNJMood":"Embarassed",
+                "m_Sentence":"Ah oui, justement…",
+                "m_PlayerMood":"Sad",
+                "m_Choices":["Quoi ?"],
+                "m_NextSentences":[{
+                    "m_PNJMood":"Embarassed",
+                    "m_Sentence":"En parlant de sortir, j'ai perdu la clé...",
+                    "m_PlayerMood":"Angry",
+                    "m_Choices":["Mais nonnn ! Tu abuses..."],
+                    "m_NextSentences":[]
+                }]
+            }]
+        }]
+    }]
+}
