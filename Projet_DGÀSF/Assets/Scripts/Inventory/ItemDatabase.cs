@@ -10,10 +10,10 @@ public class ItemDatabase
     {
         this.items = new List<Item>();
 
-        Item clef = new Item(0, "Clé", "Une jolie clé");
+        Item clef = new Item(0, "Clé", "Une jolie clé", "cle", "cle_0");
         this.items.Add(clef);
 
-        Item bread = new Item(0, "Pain", "Un bon bout de pain");
+        Item bread = new Item(0, "Pain", "Un bon bout de pain", "Pain");
         this.items.Add(bread);
     }
 
