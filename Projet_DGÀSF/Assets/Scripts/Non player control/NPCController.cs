@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using static Dialog;
 using System.IO;
 
@@ -54,6 +52,8 @@ public class NPCController : MonoBehaviour
             return;
         }
 
+        // Debug.Log(GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting());
+
         if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog && m_JsonFile != null && !GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting())
         {
             m_Interacting = true;
@@ -77,13 +77,14 @@ public class NPCController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(false);
+
         if (m_Possible && m_Interacting)
         {
             GetComponent<DialogManager>().EndDialog();
             m_StartDialog = false;
             m_Interacting = false;
             m_EndDialog = false;
-            GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(false);
         }
     }
 }

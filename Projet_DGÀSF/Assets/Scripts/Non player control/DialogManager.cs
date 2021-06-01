@@ -49,16 +49,27 @@ public class DialogManager : MonoBehaviour
     public string m_Player;
     private Dictionary<string, Sprite> m_PlayerSprites;
     public Sprite m_PlayerSprite;
+    public Sprite m_PlayerHappySprite;
     public Sprite m_PlayerSadSprite;
     public Sprite m_PlayerAngrySprite;
-    public Sprite m_PlayerEmbarassedSprite;
+    public Sprite m_PlayerEmbarrassedSprite;
+    public Sprite m_PlayerExhaustedSprite;
+    public Sprite m_PlayerBoredSprite;
+    public Sprite m_PlayerCunningSprite;
+    public Sprite m_PlayerSurprisedSprite;
 
-    public string m_PNJ;
-    private Dictionary<string, Sprite> m_PNJSprites;
-    public Sprite m_PNJSprite;
-    public Sprite m_PNJSadSprite;
-    public Sprite m_PNJAngrySprite;
-    public Sprite m_PNJEmbarassedSprite;
+
+    public string[] m_PNJs;
+    private Dictionary<string, Sprite>[] m_PNJsSprites;
+    public Sprite[] m_PNJsSprite;
+    public Sprite[] m_PNJsHappySprite;
+    public Sprite[] m_PNJsSadSprite;
+    public Sprite[] m_PNJsAngrySprite;
+    public Sprite[] m_PNJsEmbarrassedSprite;
+    public Sprite[] m_PNJsExhaustedSprite;
+    public Sprite[] m_PNJsBoredSprite;
+    public Sprite[] m_PNJsCunningSprite;
+    public Sprite[] m_PNJsSurprisedSprite;
 
     public Vector3 m_Decal1;
     public Vector3 m_Decal2;
@@ -75,16 +86,29 @@ public class DialogManager : MonoBehaviour
         // Dictionnaire de Sprites pour le joueur
         m_PlayerSprites = new Dictionary<string, Sprite>();
         if (m_PlayerSprite != null) m_PlayerSprites["Normal"] = m_PlayerSprite;
+        if (m_PlayerHappySprite != null) m_PlayerSprites["Happy"] = m_PlayerHappySprite;
         if (m_PlayerSadSprite != null) m_PlayerSprites["Sad"] = m_PlayerSadSprite;
         if (m_PlayerAngrySprite != null) m_PlayerSprites["Angry"] = m_PlayerAngrySprite;
-        if (m_PlayerEmbarassedSprite != null) m_PlayerSprites["Embarassed"] = m_PlayerEmbarassedSprite;
+        if (m_PlayerEmbarrassedSprite != null) m_PlayerSprites["Embarrassed"] = m_PlayerEmbarrassedSprite;
+        if (m_PlayerExhaustedSprite != null) m_PlayerSprites["Exhausted"] = m_PlayerExhaustedSprite;
+        if (m_PlayerBoredSprite != null) m_PlayerSprites["Bored"] = m_PlayerBoredSprite;
+        if (m_PlayerCunningSprite != null) m_PlayerSprites["Cunning"] = m_PlayerCunningSprite;
+        if (m_PlayerSurprisedSprite != null) m_PlayerSprites["Surprised"] = m_PlayerSurprisedSprite;
 
         // Dictionnaire de Sprites pour le PNJ
-        m_PNJSprites = new Dictionary<string, Sprite>();
-        if (m_PNJSprite != null) m_PNJSprites["Normal"] = m_PNJSprite;
-        if (m_PNJSadSprite != null) m_PNJSprites["Sad"] = m_PNJSadSprite;
-        if (m_PNJAngrySprite != null) m_PNJSprites["Angry"] = m_PNJAngrySprite;
-        if (m_PNJEmbarassedSprite != null) m_PNJSprites["Embarassed"] = m_PNJEmbarassedSprite;
+        m_PNJsSprites = new Dictionary<string, Sprite>[m_PNJs.Length];
+        for (int i = 0 ; i < m_PNJsSprites.Length ; i++) {
+            m_PNJsSprites[i] = new Dictionary<string, Sprite>();
+            if (i < m_PNJsSprite.Length && m_PNJsSprite[i] != null) m_PNJsSprites[i]["Normal"] = m_PNJsSprite[i];
+            if (i < m_PNJsHappySprite.Length && m_PNJsHappySprite[i] != null) m_PNJsSprites[i]["Happy"] = m_PNJsHappySprite[i];
+            if (i < m_PNJsSadSprite.Length && m_PNJsSadSprite[i] != null) m_PNJsSprites[i]["Sad"] = m_PNJsSadSprite[i];
+            if (i < m_PNJsAngrySprite.Length && m_PNJsAngrySprite[i] != null) m_PNJsSprites[i]["Angry"] = m_PNJsAngrySprite[i];
+            if (i < m_PNJsEmbarrassedSprite.Length && m_PNJsEmbarrassedSprite[i] != null) m_PNJsSprites[i]["Embarrassed"] = m_PNJsEmbarrassedSprite[i];
+            if (i < m_PNJsExhaustedSprite.Length && m_PNJsExhaustedSprite[i] != null) m_PNJsSprites[i]["Exhausted"] = m_PNJsExhaustedSprite[i];
+            if (i < m_PNJsBoredSprite.Length && m_PNJsBoredSprite[i] != null) m_PNJsSprites[i]["Bored"] = m_PNJsBoredSprite[i];
+            if (i < m_PNJsCunningSprite.Length && m_PNJsCunningSprite[i] != null) m_PNJsSprites[i]["Cunning"] = m_PNJsCunningSprite[i];
+            if (i < m_PNJsSurprisedSprite.Length && m_PNJsSurprisedSprite[i] != null) m_PNJsSprites[i]["Surprised"] = m_PNJsSurprisedSprite[i];
+        }
     }
 
     // Lance le dialogue
@@ -104,7 +128,7 @@ public class DialogManager : MonoBehaviour
         // Instancie les éléments liés au PNJ et met à jour son sprite
         m_DialogTextPNJUI = m_DialogBoxChildren["InteractionBoxTextPNJ"];
         m_DialogTextPNJ = m_DialogTextPNJUI.GetComponent<TextMeshProUGUI>();
-        m_DialogBoxChildren["PNJSprite"].GetComponent<Image>().sprite = m_PNJSprites[m_Dialog.m_PNJMood];
+        m_DialogBoxChildren["PNJSprite"].GetComponent<Image>().sprite = m_PNJsSprites[m_Dialog.m_PNJIndex][m_Dialog.m_PNJMood];
 
         // Instancie et cache les éléments liés au bouton suivant
         m_NextButton = m_DialogBoxChildren["NextButton"].GetComponent<Button>();
@@ -112,133 +136,144 @@ public class DialogManager : MonoBehaviour
         m_DialogBoxChildren["NextButton"].SetActive(false);
 
         // Lance la coroutine pour l'effet d'écriture et affiche le bouton suivant à la fin
-        StartCoroutine(TypingText.Type(m_DialogTextPNJ, "<u>" + m_PNJ + " :</u>\n" + m_Dialog.m_Sentence, m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
+        StartCoroutine(TypingText.Type(m_DialogTextPNJ, "<u>" + m_PNJs[m_Dialog.m_PNJIndex] + " :</u>\n" + m_Dialog.m_Sentence, m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
     }
 
     // Gère l'affichage de la réponse du joueur (texte ou boutons de choix)
     private void ResponseDialog()
     {
-        // Cache les éléments liés au bouton suivant et au PNJ
-        m_DialogBoxChildren["NextButton"].SetActive(false);
-        m_DialogTextPNJUI.SetActive(false);
-        m_DialogBoxChildren["HeadBoxPNJ"].SetActive(false);
-
-        // Affiche le sprite joueur et le met à jour
-        m_DialogBoxChildren["HeadBoxPlayer"].SetActive(true);
-        m_DialogBoxChildren["PlayerSprite"].GetComponent<Image>().sprite = m_PlayerSprites[m_Dialog.m_PlayerMood];
-
-        // Si il y a qu'un réponse du joueur possible
-        if (m_Dialog.m_Choices.Length == 1)
+        // Si le joueur réponds
+        if (! string.IsNullOrEmpty(m_Dialog.m_PlayerMood))
         {
-            // Affiche la zone de texte du joueur
-            m_DialogTextPlayerUI.SetActive(true);
+            // Cache les éléments liés au bouton suivant et au PNJ
+            m_DialogBoxChildren["NextButton"].SetActive(false);
+            m_DialogTextPNJUI.SetActive(false);
+            m_DialogBoxChildren["HeadBoxPNJ"].SetActive(false);
 
-            // Si il n'y a pas de réponse du PNJ, lance la coroutine pour l'effet d'écriture et affiche le bouton Fin à la fin
-            if (m_Dialog.m_NextSentences.Length == 0)
-            {
-                StartCoroutine(TypingText.Type(m_DialogTextPlayer, "<u>" + m_Player + " :</u>\n" + m_Dialog.m_Choices[0], m_TypingSpeed, FinishButton));
-            }
-            // Sinon, lance la coroutine et affiche le bouton suivant à la fin
-            else 
-            {
-                m_NextButton.onClick.RemoveAllListeners();
-                m_NextButton.onClick.AddListener(() => ChoiceDialog(-1));
-                StartCoroutine(TypingText.Type(m_DialogTextPlayer, "<u>" + m_Player + " :</u>\n" + m_Dialog.m_Choices[0], m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
-            }
+            // Affiche le sprite joueur et le met à jour
+            m_DialogBoxChildren["HeadBoxPlayer"].SetActive(true);
+            m_DialogBoxChildren["PlayerSprite"].GetComponent<Image>().sprite = m_PlayerSprites[m_Dialog.m_PlayerMood];
 
+            // Si il y a qu'un réponse du joueur possible
+            if (m_Dialog.m_Choices.Length == 1)
+            {
+                // Affiche la zone de texte du joueur
+                m_DialogTextPlayerUI.SetActive(true);
+
+                // Si il n'y a pas de réponse du PNJ, lance la coroutine pour l'effet d'écriture et affiche le bouton Fin à la fin
+                if (m_Dialog.m_NextSentences.Length == 0)
+                {
+                    StartCoroutine(TypingText.Type(m_DialogTextPlayer, "<u>" + m_Player + " :</u>\n" + m_Dialog.m_Choices[0], m_TypingSpeed, FinishButton));
+                }
+                // Sinon, lance la coroutine et affiche le bouton suivant à la fin
+                else 
+                {
+                    m_NextButton.onClick.RemoveAllListeners();
+                    m_NextButton.onClick.AddListener(() => ChoiceDialog(-1));
+                    StartCoroutine(TypingText.Type(m_DialogTextPlayer, "<u>" + m_Player + " :</u>\n" + m_Dialog.m_Choices[0], m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
+                }
+
+            }
+            // Si il y a un choix de réponse, ajoute les boutons pour chaque choix
+            else if (m_Dialog.m_Choices.Length > 1)
+            {
+            // Instancie le premier bouton
+                m_CanvasFirstChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+                Dictionary<string, GameObject> m_FirstChoiceChildren = ChildrenComponents.GetChildren(m_CanvasFirstChoiceButton);
+                m_FirstChoiceButtonUI = m_FirstChoiceChildren["InteractionButton"];
+                m_FirstChoiceButtonUI.name = "FirstChoiceButton";
+                m_FirstChoiceButtonUI.transform.Translate(m_Decal1);
+                m_FirstChoiceButton = m_FirstChoiceButtonUI.GetComponent<Button>();
+                m_FirstChoiceButton.onClick.AddListener(() => ChoiceDialog(1));
+
+                // Défini le texte du premier bouton
+                GameObject m_FirstChoiceTextUI = m_FirstChoiceChildren["InteractionButtonText"];
+                m_FirstChoiceTextUI.name = "FirstChoiceText";
+                m_FirstChoiceText = m_FirstChoiceTextUI.GetComponent<TextMeshProUGUI>();
+                m_FirstChoiceText.text = m_Dialog.m_Choices[0];
+
+                // Modification de la taille des boutons pour accueillir 3 ou 4 boutons
+                if (m_Dialog.m_Choices.Length > 2)
+                {
+                    m_ButtonWidth = m_FirstChoiceButtonUI.GetComponent<RectTransform>().rect.width * 0.492f;
+                    m_ButtonTextWidth = m_FirstChoiceTextUI.GetComponent<RectTransform>().rect.width * 0.492f;
+
+                    m_FirstChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
+                    m_FirstChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
+                }
+
+                // Instancie le second bouton
+                m_CanvasSecondChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+                Dictionary<string, GameObject> m_SecondChoiceChildren = ChildrenComponents.GetChildren(m_CanvasSecondChoiceButton);
+                m_SecondChoiceButtonUI = m_SecondChoiceChildren["InteractionButton"];
+                m_SecondChoiceButtonUI.name = "SecondChoiceButton";
+                m_SecondChoiceButtonUI.transform.Translate(m_Decal2);
+                m_SecondChoiceButton = m_SecondChoiceButtonUI.GetComponent<Button>();
+                m_SecondChoiceButton.onClick.AddListener(() => ChoiceDialog(2));
+
+                // Défini le texte du second bouton
+                GameObject m_SecondChoiceTextUI = m_SecondChoiceChildren["InteractionButtonText"];
+                m_SecondChoiceTextUI.name = "SecondChoiceText";
+                m_SecondChoiceText = m_SecondChoiceTextUI.GetComponent<TextMeshProUGUI>();
+                m_SecondChoiceText.text = m_Dialog.m_Choices[1];
+
+                // Modification de la taille des boutons pour accueillir 3 ou 4 boutons
+                if (m_Dialog.m_Choices.Length > 2)
+                {
+                    m_SecondChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
+                    m_SecondChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
+                }
+
+                // S'il y a un troisième choix, instancie le troisième bouton et défini son texte
+                if (m_Dialog.m_Choices.Length > 2)
+                {
+                    m_CanvasThirdChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+                    Dictionary<string, GameObject> m_ThirdChoiceChildren = ChildrenComponents.GetChildren(m_CanvasThirdChoiceButton);
+                    m_ThirdChoiceButtonUI = m_ThirdChoiceChildren["InteractionButton"];
+                    m_ThirdChoiceButtonUI.name = "ThirdChoiceButton";
+                    m_ThirdChoiceButtonUI.transform.Translate(m_Decal3);
+                    m_ThirdChoiceButton = m_ThirdChoiceButtonUI.GetComponent<Button>();
+                    m_ThirdChoiceButton.onClick.AddListener(() => ChoiceDialog(3));
+
+                    GameObject m_ThirdChoiceTextUI = m_ThirdChoiceChildren["InteractionButtonText"];
+                    m_ThirdChoiceTextUI.name = "ThirdChoiceText";
+                    m_ThirdChoiceText = m_ThirdChoiceTextUI.GetComponent<TextMeshProUGUI>();
+                    m_ThirdChoiceText.text = m_Dialog.m_Choices[2];
+
+                    m_ThirdChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
+                    m_ThirdChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
+                }
+
+                // S'il y a un quatrième choix, instancie le quatrième bouton et défini son texte
+                if (m_Dialog.m_Choices.Length > 3)
+                {
+                    m_CanvasFourthChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
+                    Dictionary<string, GameObject> m_FourthChoiceChildren = ChildrenComponents.GetChildren(m_CanvasFourthChoiceButton);
+                    m_FourthChoiceButtonUI = m_FourthChoiceChildren["InteractionButton"];
+                    m_FourthChoiceButtonUI.name = "FourthChoiceButton";
+                    m_FourthChoiceButtonUI.transform.Translate(m_Decal4);
+                    m_FourthChoiceButton = m_FourthChoiceButtonUI.GetComponent<Button>();
+                    m_FourthChoiceButton.onClick.AddListener(() => ChoiceDialog(4));
+
+                    GameObject m_FourthChoiceTextUI = m_FourthChoiceChildren["InteractionButtonText"];
+                    m_FourthChoiceTextUI.name = "FourthChoiceText";
+                    m_FourthChoiceText = m_FourthChoiceTextUI.GetComponent<TextMeshProUGUI>();
+                    m_FourthChoiceText.text = m_Dialog.m_Choices[3];
+
+                    m_FourthChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
+                    m_FourthChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
+                }
+            }
+            // Sinon, affiche le bouton de fin
+            else
+            {
+                FinishButton();
+            }
         }
-        // Si il y a un choix de réponse, ajoute les boutons pour chaque choix
-        else if (m_Dialog.m_Choices.Length > 1)
-        {
-           // Instancie le premier bouton
-            m_CanvasFirstChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-            Dictionary<string, GameObject> m_FirstChoiceChildren = ChildrenComponents.GetChildren(m_CanvasFirstChoiceButton);
-            m_FirstChoiceButtonUI = m_FirstChoiceChildren["InteractionButton"];
-            m_FirstChoiceButtonUI.name = "FirstChoiceButton";
-            m_FirstChoiceButtonUI.transform.Translate(m_Decal1);
-            m_FirstChoiceButton = m_FirstChoiceButtonUI.GetComponent<Button>();
-            m_FirstChoiceButton.onClick.AddListener(() => ChoiceDialog(1));
-
-            // Défini le texte du premier bouton
-            GameObject m_FirstChoiceTextUI = m_FirstChoiceChildren["InteractionButtonText"];
-            m_FirstChoiceTextUI.name = "FirstChoiceText";
-            m_FirstChoiceText = m_FirstChoiceTextUI.GetComponent<TextMeshProUGUI>();
-            m_FirstChoiceText.text = m_Dialog.m_Choices[0];
-
-            if (m_Dialog.m_Choices.Length > 2)
-            {
-                m_ButtonWidth = m_FirstChoiceButtonUI.GetComponent<RectTransform>().rect.width * 0.492f;
-                m_ButtonTextWidth = m_FirstChoiceTextUI.GetComponent<RectTransform>().rect.width * 0.492f;
-
-                m_FirstChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
-                m_FirstChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
-            }
-
-            // Instancie le second bouton
-            m_CanvasSecondChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-            Dictionary<string, GameObject> m_SecondChoiceChildren = ChildrenComponents.GetChildren(m_CanvasSecondChoiceButton);
-            m_SecondChoiceButtonUI = m_SecondChoiceChildren["InteractionButton"];
-            m_SecondChoiceButtonUI.name = "SecondChoiceButton";
-            m_SecondChoiceButtonUI.transform.Translate(m_Decal2);
-            m_SecondChoiceButton = m_SecondChoiceButtonUI.GetComponent<Button>();
-            m_SecondChoiceButton.onClick.AddListener(() => ChoiceDialog(2));
-
-            // Défini le texte du second bouton
-            GameObject m_SecondChoiceTextUI = m_SecondChoiceChildren["InteractionButtonText"];
-            m_SecondChoiceTextUI.name = "SecondChoiceText";
-            m_SecondChoiceText = m_SecondChoiceTextUI.GetComponent<TextMeshProUGUI>();
-            m_SecondChoiceText.text = m_Dialog.m_Choices[1];
-
-            if (m_Dialog.m_Choices.Length > 2)
-            {
-                m_SecondChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
-                m_SecondChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
-            }
-
-            // S'il y a un troisième choix, instancie le troisième bouton et défini son texte
-            if (m_Dialog.m_Choices.Length > 2)
-            {
-                m_CanvasThirdChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-                Dictionary<string, GameObject> m_ThirdChoiceChildren = ChildrenComponents.GetChildren(m_CanvasThirdChoiceButton);
-                m_ThirdChoiceButtonUI = m_ThirdChoiceChildren["InteractionButton"];
-                m_ThirdChoiceButtonUI.name = "ThirdChoiceButton";
-                m_ThirdChoiceButtonUI.transform.Translate(m_Decal3);
-                m_ThirdChoiceButton = m_ThirdChoiceButtonUI.GetComponent<Button>();
-                m_ThirdChoiceButton.onClick.AddListener(() => ChoiceDialog(3));
-
-                GameObject m_ThirdChoiceTextUI = m_ThirdChoiceChildren["InteractionButtonText"];
-                m_ThirdChoiceTextUI.name = "ThirdChoiceText";
-                m_ThirdChoiceText = m_ThirdChoiceTextUI.GetComponent<TextMeshProUGUI>();
-                m_ThirdChoiceText.text = m_Dialog.m_Choices[2];
-
-                m_ThirdChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
-                m_ThirdChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
-            }
-
-            // S'il y a un quatrième choix, instancie le quatrième bouton et défini son texte
-            if (m_Dialog.m_Choices.Length > 3)
-            {
-                m_CanvasFourthChoiceButton = Instantiate(m_ChoiceButtonPrefab, transform.position, transform.rotation);
-                Dictionary<string, GameObject> m_FourthChoiceChildren = ChildrenComponents.GetChildren(m_CanvasFourthChoiceButton);
-                m_FourthChoiceButtonUI = m_FourthChoiceChildren["InteractionButton"];
-                m_FourthChoiceButtonUI.name = "FourthChoiceButton";
-                m_FourthChoiceButtonUI.transform.Translate(m_Decal4);
-                m_FourthChoiceButton = m_FourthChoiceButtonUI.GetComponent<Button>();
-                m_FourthChoiceButton.onClick.AddListener(() => ChoiceDialog(4));
-
-                GameObject m_FourthChoiceTextUI = m_FourthChoiceChildren["InteractionButtonText"];
-                m_FourthChoiceTextUI.name = "FourthChoiceText";
-                m_FourthChoiceText = m_FourthChoiceTextUI.GetComponent<TextMeshProUGUI>();
-                m_FourthChoiceText.text = m_Dialog.m_Choices[3];
-
-                m_FourthChoiceButtonUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonWidth);
-                m_FourthChoiceTextUI.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, m_ButtonTextWidth);
-            }
-        }
-        // Sinon, affiche le bouton de fin
+        // Sinon on enchaîne avec la prochaine phrase du PNJ ou on ferme le dialogue
         else
         {
-            FinishButton();
+            ChoiceDialog(-1);
         }
     }
 
@@ -317,14 +352,14 @@ public class DialogManager : MonoBehaviour
         // Affiche les éléments liés au PNJ et met à jour son sprite
         m_DialogTextPNJUI.SetActive(true);
         m_DialogBoxChildren["HeadBoxPNJ"].SetActive(true);
-        m_DialogBoxChildren["PNJSprite"].GetComponent<Image>().sprite = m_PNJSprites[m_Dialog.m_PNJMood];
+        m_DialogBoxChildren["PNJSprite"].GetComponent<Image>().sprite = m_PNJsSprites[m_Dialog.m_PNJIndex][m_Dialog.m_PNJMood];
 
         // Réinitialise l'écouteur de bouton suivant
         m_NextButton.onClick.RemoveAllListeners();
         m_NextButton.onClick.AddListener(() => ResponseDialog());
 
         // Lance la coroutine d'effet d'écriture et affiche le bouton suivant à la fin
-        StartCoroutine(TypingText.Type(m_DialogTextPNJ, "<u>" + m_PNJ + " :</u>\n" + m_Dialog.m_Sentence, m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
+        StartCoroutine(TypingText.Type(m_DialogTextPNJ, "<u>" + m_PNJs[m_Dialog.m_PNJIndex] + " :</u>\n" + m_Dialog.m_Sentence, m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
     }
 
     public void EndDialog()

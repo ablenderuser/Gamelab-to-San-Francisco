@@ -3,7 +3,7 @@ guid: bb5d5c14fffed8446a9c0c1c4857ab36
 TextureImporter:
   fileIDToRecycleName:
     21300000: soeur
-    21300002: soeur_embarassed
+    21300002: soeur_embarrassed
     21300004: autiste
     21300006: autiste_angry
     21300008: autiste_sad
@@ -13,6 +13,33 @@ TextureImporter:
     21300016: fibromyalgique
     21300018: fibromyalgique_angry
     21300020: fibromyalgique_sad
+    21300022: autiste_exhausted
+    21300024: autiste_embarrassed
+    21300026: autiste_bored
+    21300028: bipolaire_exhausted
+    21300030: bipolaire_embarrassed
+    21300032: bipolaire_bored
+    21300034: fibromyalgique_exhausted
+    21300036: fibromyalgique_embarrassed
+    21300038: fibromyalgique_bored
+    21300040: oie_canne
+    21300042: oie_canne_angry
+    21300044: oie_canne_cunning
+    21300046: papi
+    21300048: papi_bored
+    21300050: enfant_1_cunning
+    21300052: enfant_1_angry
+    21300054: enfant_1_surprised
+    21300056: enfant_1_bored
+    21300058: enfant_2_cunning
+    21300060: enfant_2_angry
+    21300062: enfant_2_surprised
+    21300064: enfant_3_cunning
+    21300066: enfant_3_angry
+    21300068: enfant_3_happy
+    21300070: enfant_3_embarrassed
+    21300072: enfant_3_bored
+    21300074: pnj_inutile
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -110,7 +137,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 218
+        y: 552
         width: 49
         height: 48
       alignment: 0
@@ -126,11 +153,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soeur_embarassed
+      name: soeur_embarrassed
       rect:
         serializedVersion: 2
         x: 81
-        y: 218
+        y: 552
         width: 49
         height: 48
       alignment: 0
@@ -150,8 +177,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 164
-        width: 47
+        y: 498
+        width: 48
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -170,7 +197,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84
-        y: 163
+        y: 498
         width: 48
         height: 42
       alignment: 0
@@ -190,7 +217,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 164
+        y: 498
         width: 48
         height: 42
       alignment: 0
@@ -210,7 +237,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 108
+        y: 442
         width: 49
         height: 46
       alignment: 0
@@ -229,8 +256,8 @@ TextureImporter:
       name: bipolaire_angry
       rect:
         serializedVersion: 2
-        x: 81
-        y: 108
+        x: 79
+        y: 442
         width: 49
         height: 46
       alignment: 0
@@ -249,8 +276,8 @@ TextureImporter:
       name: bipolaire_sad
       rect:
         serializedVersion: 2
-        x: 143
-        y: 108
+        x: 139
+        y: 442
         width: 49
         height: 46
       alignment: 0
@@ -270,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 23
-        y: 53
+        y: 387
         width: 45
         height: 41
       alignment: 0
@@ -289,8 +316,8 @@ TextureImporter:
       name: fibromyalgique_angry
       rect:
         serializedVersion: 2
-        x: 87
-        y: 53
+        x: 83
+        y: 387
         width: 45
         height: 41
       alignment: 0
@@ -309,8 +336,8 @@ TextureImporter:
       name: fibromyalgique_sad
       rect:
         serializedVersion: 2
-        x: 151
-        y: 53
+        x: 143
+        y: 387
         width: 45
         height: 41
       alignment: 0
@@ -321,6 +348,546 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 74dbc0b048900f94586b06fb48aae5fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: autiste_exhausted
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 498
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63852f909b0c1ee46a393b72bc79d61b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: autiste_embarrassed
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 498
+        width: 48
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3e2052d2b41e644b691bf428dd3bce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: autiste_bored
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 498
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861f67ab53a027040a1a8de7a248e9fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bipolaire_exhausted
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 442
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aca4c835829fa94da1d57c02bb43050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bipolaire_embarrassed
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 442
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946bc059a4d690b4ca788f1e7cb0c263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bipolaire_bored
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 442
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adeb72815fd25044fac91eb3f1b7fd7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fibromyalgique_exhausted
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 387
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87f00f897985964989a1867c402500d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fibromyalgique_embarrassed
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 387
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22ff2e64bb3f764cba34e6065ad4cf5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fibromyalgique_bored
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 387
+        width: 45
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b99861d97c4564f9a81823b0fe2529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oie_canne
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 328
+        width: 49
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca24336445060f84ea1097bdb2d018e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oie_canne_angry
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 328
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3268b5a8fb284b942ac83f91ac137692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oie_canne_cunning
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 328
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4eec46449e63264786c82023ddfefc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: papi
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 262
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a20013916990543bbde4ddebd6d719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: papi_bored
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 262
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3053da316afa886448f0db75baecb0c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_1_cunning
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 213
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dc1c4e5e98f5e45b8f390e0d19b6a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_1_angry
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 213
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ae5a3dbbacffd45a5c9491a2def397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_1_surprised
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 213
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae0f60b21f412048a868af6e8370dc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_1_bored
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 213
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b78d7919bf2224c9f8008869daa519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_2_cunning
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 158
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2e92882e17b744c8d46309de71ba91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_2_angry
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 158
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a8f5897fedb1d46b512d504681685b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_2_surprised
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 158
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afd3367543838047843619dc7b396a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_3_cunning
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 105
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f0ab3acc7a379418e65c95c569522e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_3_angry
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 105
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fa5525c6899b54dbb473f64b7d364f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_3_happy
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 105
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3176b5c5a78e464bbe6bd42ce2c27cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_3_embarrassed
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 105
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c6f6674a9840445bdc1b721bc1467e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfant_3_bored
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 105
+        width: 46
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26705da9307d91440b7c6e2c511eb927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pnj_inutile
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 54
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff07add5a643c6246a85ece07dcb95f0
       vertices: []
       indices: 
       edges: []

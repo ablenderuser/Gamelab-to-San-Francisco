@@ -1,0 +1,29 @@
+{
+    "m_PNJIndex": 0,
+    "m_PNJMood": "Angry",
+    "m_Sentence": "*HOOOONK !*",
+    "m_PlayerMood": null,
+    "m_Choices": [],
+    "m_NextSentences": [{
+        "m_PNJIndex": 0,
+        "m_PNJMood": "Angry",
+        "m_Sentence": "OÙ ÉTIEZ VOUS PASSÉS ?",
+        "m_PlayerMood": null,
+        "m_Choices": [],
+        "m_NextSentences": [{
+			"m_PNJIndex": 0,
+        	"m_PNJMood": "Angry",
+        	"m_Sentence": "Rentrez immédiatement au nid ! *Honk !*",
+        	"m_PlayerMood": null,
+        	"m_Choices": [],
+        	"m_NextSentences": [{
+				"m_PNJIndex": 0,
+				"m_PNJMood": "Normal",
+				"m_Sentence": "Merci ! Tu peux y aller !",
+				"m_PlayerMood": null,
+				"m_Choices": [],
+				"m_NextSentences": []
+			}]
+		}]
+    }]
+}

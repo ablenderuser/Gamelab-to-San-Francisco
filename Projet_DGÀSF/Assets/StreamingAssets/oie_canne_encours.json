@@ -1,0 +1,15 @@
+{
+    "m_PNJIndex": 0,
+    "m_PNJMood": "Angry",
+    "m_Sentence": "J'ai pas été assez clair ? *Honk !*",
+    "m_PlayerMood": null,
+    "m_Choices": [],
+    "m_NextSentences": [{
+        "m_PNJIndex": 0,
+        "m_PNJMood": "Cunning",
+        "m_Sentence": "Retrouve mes cinq canetons si tu veux partir !",
+        "m_PlayerMood": null,
+        "m_Choices": [],
+        "m_NextSentences": []
+    }]
+}

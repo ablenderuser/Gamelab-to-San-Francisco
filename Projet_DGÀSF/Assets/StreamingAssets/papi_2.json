@@ -1,0 +1,22 @@
+{
+    "m_PNJIndex": 0,
+    "m_PNJMood": "Normal",
+    "m_Sentence": "Encore toi ?",
+    "m_PlayerMood": null,
+    "m_Choices": [],
+    "m_NextSentences": [{
+        "m_PNJIndex": 0,
+        "m_PNJMood": "Normal",
+        "m_Sentence": "Quoi ? T'en as pas eu assez ?",
+        "m_PlayerMood": null,
+        "m_Choices": [],
+        "m_NextSentences": [{
+			"m_PNJIndex": 0,
+        	"m_PNJMood": "Bored",
+        	"m_Sentence": "Allez ! Va ! Et arrête d'enquiquiner le troisième d'âge...",
+        	"m_PlayerMood": null,
+        	"m_Choices": [],
+        	"m_NextSentences": []
+		}]
+    }]
+}

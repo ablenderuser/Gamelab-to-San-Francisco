@@ -1,0 +1,78 @@
+{
+    "m_PNJIndex": 0,
+    "m_PNJMood": "Cunning",
+    "m_Sentence": "EH ! TOI ! *Honk ! Honk !*",
+    "m_PlayerMood": null,
+    "m_Choices": [],
+    "m_NextSentences": [{
+        "m_PNJIndex": 0,
+        "m_PNJMood": "Cunning",
+        "m_Sentence": "Pas si vite ! *Honk !*",
+        "m_PlayerMood": null,
+        "m_Choices": [],
+        "m_NextSentences": [{
+			"m_PNJIndex": 0,
+        	"m_PNJMood": "Cunning",
+        	"m_Sentence": "Le passage n'est pas gratuit ! J'ai besoin d'un service...",
+        	"m_PlayerMood": "Embarrassed",
+        	"m_Choices": ["Euh... d'accord !", "Je crois pas non..."],
+        	"m_NextSentences": [{
+				"m_PNJIndex": 0,
+				"m_PNJMood": "Normal",
+				"m_Sentence": "Bien ! *Honk !*",
+				"m_PlayerMood": null,
+				"m_Choices": [],
+				"m_NextSentences": [{
+					"m_PNJIndex": 0,
+					"m_PNJMood": "Cunning",
+					"m_Sentence": "Je vois que tu tiens à garder tes doigts... *Honk ! Honk !*",
+					"m_PlayerMood": null,
+					"m_Choices": [],
+					"m_NextSentences": [{
+						"m_PNJIndex": 0,
+						"m_PNJMood": "Angry",
+						"m_Sentence": "Mes petits ont encore fugué... (Sales mioches !)",
+						"m_PlayerMood": null,
+						"m_Choices": [],
+						"m_NextSentences": [{
+							"m_PNJIndex": 0,
+							"m_PNJMood": "Normal",
+							"m_Sentence": "Retrouve-les pour moi... J'ai cinq garnements ! *Honk !*",
+							"m_PlayerMood": null,
+							"m_Choices": [],
+							"m_NextSentences": []
+						}]
+					}]
+				}]
+			}, {
+				"m_PNJIndex": 0,
+				"m_PNJMood": "Angry",
+				"m_Sentence": "*HOOOONK !*",
+				"m_PlayerMood": null,
+				"m_Choices": [],
+				"m_NextSentences": [{
+					"m_PNJIndex": 0,
+					"m_PNJMood": "Angry",
+					"m_Sentence": "Tu veux te faire pincer les fesses ? *HONK !*",
+					"m_PlayerMood": null,
+					"m_Choices": [],
+					"m_NextSentences": [{
+						"m_PNJIndex": 0,
+						"m_PNJMood": "Angry",
+						"m_Sentence": "Je n'ai jamais dit que t'avais le choix ! *Honk !*",
+						"m_PlayerMood": null,
+						"m_Choices": [],
+						"m_NextSentences": [{
+							"m_PNJIndex": 0,
+							"m_PNJMood": "Angry",
+							"m_Sentence": "Retrouve mes cinq gamins si tu ne veux pas finir à chercher tes cinq doigts dans le parc... *Honk ! Honk !*",
+							"m_PlayerMood": null,
+							"m_Choices": [],
+							"m_NextSentences": []
+						}]
+					}]
+				}]
+			}]
+		}]
+    }]
+}

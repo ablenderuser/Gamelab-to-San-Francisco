@@ -1,0 +1,29 @@
+{
+    "m_PNJIndex": 0,
+    "m_PNJMood": "Normal",
+    "m_Sentence": "Bonjour mon p'tit...",
+    "m_PlayerMood": null,
+    "m_Choices": [],
+    "m_NextSentences": [{
+        "m_PNJIndex": 0,
+        "m_PNJMood": "Normal",
+        "m_Sentence": "Alors toi aussi tu t'es fais coincer par c't vieille volaille ?",
+        "m_PlayerMood": "Exhausted",
+        "m_Choices": ["(soupir)"],
+        "m_NextSentences": [{
+			"m_PNJIndex": 0,
+        	"m_PNJMood": "Normal",
+        	"m_Sentence": "Allez viens... Laisse la vieille canaille que je suis t'aider",
+        	"m_PlayerMood": null,
+        	"m_Choices": [],
+        	"m_NextSentences": [{
+				"m_PNJIndex": 0,
+				"m_PNJMood": "Normal",
+				"m_Sentence": "Tiens ! Attrape ses miettes de pain !",
+				"m_PlayerMood": null,
+				"m_Choices": [],
+				"m_NextSentences": []
+			}]
+		}]
+    }]
+}

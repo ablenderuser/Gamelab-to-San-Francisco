@@ -40,7 +40,7 @@ public class HeartHealthVisual : MonoBehaviour
 
         InvokeRepeating("HealingAnimatedPeriodic", 0f, 0.1f);
         //FunctionPeriodic.Create(HealingAnimatedPeriodic,.05f);
-        HeartHealthSystem heartHealthSystem = new HeartHealthSystem(48);
+        HeartHealthSystem heartHealthSystem = new HeartHealthSystem(5);
         SetHeartHealthSystem(heartHealthSystem);
     }
 
@@ -67,9 +67,9 @@ public class HeartHealthVisual : MonoBehaviour
         if (File.Exists(path))
         {
             Debug.Log(File.ReadAllText(path));
-            heartHealthSystemStatic.Damage(48 - int.Parse(File.ReadAllText(path)));
+            heartHealthSystemStatic.Damage(5 - int.Parse(File.ReadAllText(path)));
         } else {
-            heartHealthSystemStatic.Damage(42);
+            heartHealthSystemStatic.Damage(4);
         }
     }
 
@@ -188,7 +188,7 @@ public class HeartHealthVisual : MonoBehaviour
         string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
         print(path);
         
-        File.WriteAllText(path,heartHealthSystemStatic.GetNumberOfFragments().ToString());
+        File.WriteAllText(path,heartHealthSystemStatic.GetNumberOfHearts().ToString());
         
     }
 }

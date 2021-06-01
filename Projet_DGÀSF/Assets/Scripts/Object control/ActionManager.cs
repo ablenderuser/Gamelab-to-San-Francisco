@@ -91,13 +91,13 @@ public class ActionManager : MonoBehaviour
         GetComponent<ObjectController>().DoAction();
 		if (m_HealOrDamage == "Heal")
 		{
-			HeartHealthVisual.heartHealthSystemStatic.Heal(4);
+			HeartHealthVisual.heartHealthSystemStatic.Heal(1);
 		}
         else
         {
             if (m_HealOrDamage == "Damage")
             {
-                HeartHealthVisual.heartHealthSystemStatic.Damage(4);
+                HeartHealthVisual.heartHealthSystemStatic.Damage(1);
             }
         }
         HideDescription();

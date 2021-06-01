@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using static Dialog;
-using System.IO;
+﻿using UnityEngine;
 
 public class ObjectController : MonoBehaviour
 {
@@ -35,6 +31,7 @@ public class ObjectController : MonoBehaviour
 
     void Update()
     {
+        // Affichage de la clé cachée 
         if (m_InvisibleObject != null && m_Movable)
         {
             float d = (GetComponent<Transform>().position - m_InvisibleObject.GetComponent<Transform>().position).magnitude;
@@ -45,7 +42,6 @@ public class ObjectController : MonoBehaviour
             }
         }
     }
-
 
     public void SetEndInteraction()
     {
@@ -91,6 +87,7 @@ public class ObjectController : MonoBehaviour
     {
         // Pour éviter que les colliders des autres décors posent problème
         bool decorCollider = (collision.tag == "DecorCollider");
+        if (!decorCollider) decorCollider = (collision.tag == "CollisionCollider");
         if (!decorCollider) decorCollider = (collision.tag == "Linge");
 
         if (m_Possible && !decorCollider && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartInteraction && !m_EndInteraction && !GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting())

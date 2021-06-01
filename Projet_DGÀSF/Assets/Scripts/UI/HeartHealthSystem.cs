@@ -14,7 +14,7 @@ public class HeartHealthSystem : MonoBehaviour
     public HeartHealthSystem(int heartAmount)
     {
         heartList = new List<Heart>();
-        for(int i = 0; i < heartAmount / MAX_FRAGMENT_AMOUNT; i++)
+        for(int i = 0; i < heartAmount ; i++)
         {
             Heart heart = new Heart(MAX_FRAGMENT_AMOUNT);
             heartList.Add(heart);
@@ -26,12 +26,15 @@ public class HeartHealthSystem : MonoBehaviour
         return heartList;
     }
     
-    public int GetNumberOfFragments(){
+    public int GetNumberOfHearts(){
         int c = 0;
 
-        for(int i = heartList.Count - 1; i >= 0 ; i--)
+        for (int i = heartList.Count - 1; i >= 0 ; i--)
         {
-            c += heartList[i].GetFragmentAmount();
+            if (heartList[i].GetFragmentAmount() == 4)
+            {
+                c += 1;
+            }
         }
 
         return c;
@@ -39,7 +42,8 @@ public class HeartHealthSystem : MonoBehaviour
 
     public void Damage(int damageAmount)
     {
-        for(int i = heartList.Count - 1; i >= 0 ; i--)
+        damageAmount *= 4;
+        for (int i = heartList.Count - 1; i >= 0 ; i--)
         {
             Heart heart = heartList[i];
             if (damageAmount > heart.GetFragmentAmount())
@@ -64,6 +68,7 @@ public class HeartHealthSystem : MonoBehaviour
 
     public int Heal(int healAmount)
     {
+        healAmount *= 4;
         int newHearts = 0; 
         for (int i =  0; i < heartList.Count; i++)
         {
