@@ -362,7 +362,7 @@ public class DialogManager : MonoBehaviour
         StartCoroutine(TypingText.Type(m_DialogTextPNJ, "<u>" + m_PNJs[m_Dialog.m_PNJIndex] + " :</u>\n" + m_Dialog.m_Sentence, m_TypingSpeed, m_DialogBoxChildren["NextButton"]));
     }
 
-    public void EndDialog()
+    public void EndDialog(bool end=true)
     {
         // Détruit les boutons de choix et la boite de dialogue
         Destroy(m_CanvasFirstChoiceButton);
@@ -372,7 +372,9 @@ public class DialogManager : MonoBehaviour
         Destroy(m_CanvasFinishDialogButton);
         Destroy(m_DialogBox);
 
-        // Lance les actions du NPC liées à la fin du dialogue
-        GetComponent<NPCController>().SetEndDialog();
+        // Lance les actions du NPC liées à la fin du dialogue (uniquement si end est à true, donc si c'est vraiment la fin du dialogue)
+        if (end) {
+            GetComponent<NPCController>().SetEndDialog();
+        }
     }
 }

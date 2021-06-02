@@ -9,6 +9,7 @@ TagManager:
   - Text
   - Linge
   - DecorCollider
+  - CollisionCollider
   layers:
   - Default
   - TransparentFX

@@ -4,7 +4,11 @@ using System.IO;
 
 public class NPCController : MonoBehaviour
 {
-    public string m_JsonFile;
+    public string m_JsonFile_Start;
+    public string m_JsonFile_During;
+    public string m_JsonFile_End;
+
+    private int m_Step;
     public int m_Heal;
     public int m_Damage;
     //private bool m_HealUsed = false;
@@ -13,6 +17,9 @@ public class NPCController : MonoBehaviour
     public GameObject m_InvisibleObject;
 
     private Dialog m_Dialog;
+    private Dialog m_Dialog_Start;
+    private Dialog m_Dialog_During;
+    private Dialog m_Dialog_End;
 
     private bool m_Possible = true;
     private bool m_Interacting = false;
@@ -25,18 +32,49 @@ public class NPCController : MonoBehaviour
     {
         // Debug.Log("StreamingAssets PATH : " + Application.streamingAssetsPath);
         // Debug.Log("JSON file name : " + m_JsonFile);
-        if (m_JsonFile != null)
+        if (m_JsonFile_Start != null)
         {
-            string path = Path.Combine(Application.streamingAssetsPath, m_JsonFile);
-            // Debug.Log("JSON PATH : " + path);
+            string path = Path.Combine(Application.streamingAssetsPath, m_JsonFile_Start);
+            Debug.Log(m_JsonFile_Start);
+            Debug.Log("JSON PATH : " + path);
             string jsonString = File.ReadAllText(path);
-            m_Dialog = CreateFromJSON(jsonString);
+            m_Dialog_Start = CreateFromJSON(jsonString);
+            m_Dialog = m_Dialog_Start;
+            m_Step = 1;
+        }
+
+        if (m_JsonFile_During != null)
+        {
+            string path_during = Path.Combine(Application.streamingAssetsPath, m_JsonFile_During);
+            Debug.Log(m_JsonFile_During);
+            Debug.Log("JSON PATH : " + path_during);
+            string jsonStringDuring = File.ReadAllText(path_during);
+            m_Dialog_During = CreateFromJSON(jsonStringDuring);
+        }
+
+        if (m_JsonFile_End != null)
+        {
+            string path_end = Path.Combine(Application.streamingAssetsPath, m_JsonFile_End);
+            Debug.Log(m_JsonFile_End);
+            Debug.Log("JSON PATH : " + path_end);
+            string jsonStringEnd = File.ReadAllText(path_end);
+            m_Dialog_End = CreateFromJSON(jsonStringEnd);
         }
     }
 
     public void SetEndDialog()
     {
-        m_EndDialog = true;
+        // S'il y a un dialogue durant la quête
+        if (m_Dialog_During != null && m_Step == 1) {
+            m_Dialog = m_Dialog_During;
+            m_Step = 2;
+        // S'il y a un dialogue de fin
+        } else if (m_Dialog_End != null && (m_Step == 1 || m_Step == 2)) {
+            m_Dialog = m_Dialog_End;
+            m_Step = 3;
+        } else {
+            m_EndDialog = true;
+        }
         m_StartDialog = false;
     }
 
@@ -54,7 +92,7 @@ public class NPCController : MonoBehaviour
 
         // Debug.Log(GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting());
 
-        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog && m_JsonFile != null && !GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting())
+        if (m_Possible && new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude == 0 && !m_StartDialog && !m_EndDialog && m_Dialog != null && !GameObject.Find("Player character").GetComponent<PlayerController>().IsInteracting())
         {
             m_Interacting = true;
             GameObject.Find("Player character").GetComponent<PlayerController>().SetInteracting(true);
@@ -81,7 +119,7 @@ public class NPCController : MonoBehaviour
 
         if (m_Possible && m_Interacting)
         {
-            GetComponent<DialogManager>().EndDialog();
+            GetComponent<DialogManager>().EndDialog(false);
             m_StartDialog = false;
             m_Interacting = false;
             m_EndDialog = false;

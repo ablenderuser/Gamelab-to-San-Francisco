@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Newtonsoft.Json;
 
 [System.Serializable]
 // required for display in unity Inspector tab (as it is not a MonoBehavior)
@@ -16,6 +17,6 @@ public class Dialog
 
     public static Dialog CreateFromJSON(string jsonString)
     {
-        return JsonUtility.FromJson<Dialog>(jsonString);
+        return JsonConvert.DeserializeObject<Dialog>(jsonString);
     }
 }
