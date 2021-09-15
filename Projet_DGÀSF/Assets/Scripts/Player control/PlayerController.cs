@@ -32,25 +32,14 @@ public class PlayerController : MonoBehaviour
         
         animator.SetFloat("Vitesse", 60*movement.magnitude * Time.fixedDeltaTime);
         
-        if ( movement.x > 0 )
+        if ( movement.x >= 0 )
         {
-			if (facingRight == false)
-			{
-				Flip();
-			}
 			animator.SetBool("Droite", true);
 		}
 		else
-		{
-			if ( movement.x < 0 )
-			{
-				if (facingRight == true)
-				{
-					Flip();
-				}
-				animator.SetBool("Droite", false);
-			}
-		}
+        {
+            animator.SetBool("Droite", false);
+        }
 		
 		if ( movement.y > 0 )
 		{
@@ -65,16 +54,6 @@ public class PlayerController : MonoBehaviour
         rb2d.MovePosition(rb2d.position + 60*movement * Time.fixedDeltaTime );
         
 	}
-
-    private void Flip()
-    {
-		facingRight = !facingRight;
-
-	// use negative scaling to reverse the sprite when the player is facing left
-        Vector3 s = transform.localScale;
-        s.x *= -1;
-        transform.localScale = s;
-    }
 
     public void SetInteracting(bool interact)
     {

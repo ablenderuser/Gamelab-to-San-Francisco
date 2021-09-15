@@ -191,6 +191,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300008, guid: 0a07efc733c4e5fd393cf187e98df0be,
         type: 3}
+    - target: {fileID: 7678406169868129884, guid: aee9dc919b044b549a9bdfabafa7ee8d,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7678406169868129885, guid: aee9dc919b044b549a9bdfabafa7ee8d,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
