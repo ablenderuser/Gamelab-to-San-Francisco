@@ -2089,6 +2089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5954879025752206486, guid: b27aa20cba710914d88cf1c5ada48c5a,
         type: 3}
+<<<<<<< Updated upstream
       propertyPath: m_Offset.y
       value: 0.28512383
       objectReference: {fileID: 0}
@@ -2106,6 +2107,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 44.019165
+=======
+      propertyPath: m_IsActive
+      value: 1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b27aa20cba710914d88cf1c5ada48c5a, type: 3}
@@ -62305,6 +62310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5954879025752206486, guid: b27aa20cba710914d88cf1c5ada48c5a,
         type: 3}
+<<<<<<< Updated upstream
       propertyPath: m_Size.x
       value: 1.3542267
       objectReference: {fileID: 0}
@@ -62317,6 +62323,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 1.1609036
+=======
+      propertyPath: m_IsActive
+      value: 1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b27aa20cba710914d88cf1c5ada48c5a, type: 3}
@@ -65345,7 +65355,7 @@ PrefabInstance:
     - target: {fileID: 1057245335404676867, guid: 1768625451b018f4d8a4fa41babe6f63,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1057245335497851655, guid: 1768625451b018f4d8a4fa41babe6f63,
         type: 3}
@@ -66759,7 +66769,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
+<<<<<<< Updated upstream
   m_Sprite: {fileID: 21300002, guid: 7097494264705e54f8bbd258ea561776, type: 3}
+=======
+  m_Sprite: {fileID: 21300000, guid: 561932f3d20502e4181c4459dbe5e044, type: 3}
+>>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
