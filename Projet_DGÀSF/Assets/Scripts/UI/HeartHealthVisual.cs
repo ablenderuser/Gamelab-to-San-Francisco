@@ -62,7 +62,7 @@ public class HeartHealthVisual : MonoBehaviour
         heartHealthSystem.OnHealed += heartHealthSystem_OnHealed;
         heartHealthSystem.OnDead += heartHealthSystem_OnDead;
 
-        string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
+        string path = Path.Combine(Application.streamingAssetsPath, "numberOfHearts.txt");
         Debug.Log("HeartHealthVisual");
         if (File.Exists(path))
         {
@@ -185,7 +185,7 @@ public class HeartHealthVisual : MonoBehaviour
 
     void OnDestroy() {
         print("Script was destroyed");
-        string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
+        string path = Path.Combine(Application.streamingAssetsPath, "numberOfHearts.txt");
         print(path);
         
         File.WriteAllText(path,heartHealthSystemStatic.GetNumberOfHearts().ToString());

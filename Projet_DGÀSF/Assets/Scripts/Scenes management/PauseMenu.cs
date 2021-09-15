@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement;
 
@@ -34,7 +32,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
     public void Menu(){
-    	string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
+    	string path = Path.Combine(Application.streamingAssetsPath, "numberOfHearts.txt");
         File.WriteAllText(path,"5");
         //Debug.Log("launchStartMenu");
         HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
@@ -48,7 +46,7 @@ public class PauseMenu : MonoBehaviour
         bool editionMode = false;
         if (editionMode)
         {
-            string path = Application.dataPath +"/Scripts/UI/numberOfHearts.txt";
+            string path = Path.Combine(Application.streamingAssetsPath, "numberOfHearts.txt");
             HeartHealthVisual.heartHealthSystemStatic.Damage(4*40);
             HeartHealthVisual.heartHealthSystemStatic.Heal(20);
             //Debug.Log("Quit clicked");

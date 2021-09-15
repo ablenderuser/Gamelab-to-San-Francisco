@@ -88,7 +88,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\Scripts\UI\numberOfHearts.txt" />
+     <None Include="Assets\StreamingAssets\numberOfHearts.txt" />
      <None Include="Assets\JsonDotNet\link.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Scenes\numberOfHearts.txt" />
