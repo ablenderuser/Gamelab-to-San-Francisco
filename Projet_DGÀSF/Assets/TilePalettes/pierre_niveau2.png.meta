@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 938bec8e9dde18b409e9c0a464874865
+guid: af8763fba23150f4cb556fad707ca22e
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -31,7 +31,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -69,38 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-<<<<<<< Updated upstream:Projet_DGÀSF/Assets/Sprites/Environnement/Meubles et accessoires/solsniveau2.png.meta
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-=======
->>>>>>> Stashed changes:Projet_DGÀSF/Assets/Sprites/Environnement/Sol/pierre_niveau2.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fd964aeff1bb172458b35e681b38a611
+    spriteID: a544ef7f9a3ef5546ba337a94f6382ad
     vertices: []
     indices: 
     edges: []
