@@ -7,6 +7,10 @@ public class CollisionHandlingParent : MonoBehaviour
     private bool INzone = false;
     private Renderer sprite;
 
+    private int initialOrder;
+
+    public int targetOrder = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +19,7 @@ public class CollisionHandlingParent : MonoBehaviour
         {
             sprite = GetComponentInParent<ParticleSystem>().GetComponent<Renderer>();
         }
+        initialOrder = sprite.sortingOrder;
 
     }
 
@@ -33,7 +38,7 @@ public class CollisionHandlingParent : MonoBehaviour
         //Debug.Log("Entré");
         if (!INzone && !decorCollider) {
             INzone = true;
-            sprite.sortingOrder = 5;
+            sprite.sortingOrder = targetOrder;
             Vector3 newPosition = transform.parent.position;
             newPosition.z = transform.parent.position.z + 0.5f;
             transform.parent.position = newPosition;
@@ -43,7 +48,7 @@ public class CollisionHandlingParent : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Debug.Log("Sorti");
-        sprite.sortingOrder = 1;
+        sprite.sortingOrder = initialOrder;
         Vector3 newPosition = transform.parent.position;
         newPosition.z = transform.parent.position.z - 0.5f;
         transform.parent.position = newPosition;

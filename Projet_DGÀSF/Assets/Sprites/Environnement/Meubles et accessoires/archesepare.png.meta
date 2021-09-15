@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: 2e1c7a3f29d8db74bb10feaf602fc932
+guid: 7097494264705e54f8bbd258ea561776
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: archesepare_0
+    21300002: archesepare_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +95,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: archesepare_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 61
+        width: 72
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfe20e729e5e42438bbc1c263ea9b8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archesepare_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 29
+        width: 130
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98d9492d3fc4e246bf50441e0f658a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eeaf2bcbc3c67434886775ad8095c536
+    spriteID: d4c03b9caf26df147b9b34614e37ec3e
     vertices: []
     indices: 
     edges: []

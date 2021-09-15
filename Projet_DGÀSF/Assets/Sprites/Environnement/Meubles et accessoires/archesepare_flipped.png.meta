@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: 2e1c7a3f29d8db74bb10feaf602fc932
+guid: 940bbe4827095f64cbd1fa14a39af2d5
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: archesepare_flipped_0
+    21300002: archesepare_flipped_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +95,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: archesepare_flipped_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 21
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ec797e7644f5d4c94712bc3169de4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archesepare_flipped_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 43
+        width: 72
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a025a591dfc9e45839a24029bbed21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eeaf2bcbc3c67434886775ad8095c536
+    spriteID: 8360b4d67af89de4aba2249f1d1bcc4e
     vertices: []
     indices: 
     edges: []
